@@ -5,3 +5,29 @@
   font-family: "Roboto";
 }
   
+.projectBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  align-items: center;
+  margin-right: 0px;
+}
+
+.basicBorder {
+  border-radius: 5px;
+  border: 1px solid black;
+  background: rgb(91, 89, 89);
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 300px;
+  line-height: 50px;
+  margin-top: 5px;
+  text-decoration: none;
+  color: Black;
+  text-align:center;
+}
+
+.basicBorder:hover {
+  opacity: 25%;
+}

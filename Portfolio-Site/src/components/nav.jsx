@@ -11,8 +11,8 @@ export default function Nav() {
           style={{
             display: "flex",
             flexDirection: "row",
-            alignItems: "flex-start",
-            justifyContent: "flex-start",
+            alignItems: "center",
+            justifyContent: "flex-end",
           }}
         >
           <div style={linkStyle}>
