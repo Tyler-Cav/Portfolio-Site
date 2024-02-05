@@ -1,12 +1,13 @@
 import Grid from "@mui/material/Grid";
-function Name() {
+
+function Home() {
   return (
     <>
-      <Grid item xs={4}>
+      <Grid className="Name" item xs={4}>
         <h1>Tyler Cavanaugh</h1>
       </Grid>
     </>
   );
 }
 
-export default Name;
+export default Home;

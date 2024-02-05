@@ -1,10 +1,38 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+import HomeRoute from "./Pages/Home/HomeRoute.jsx";
+import Portfolio from "./Pages/Portfolio/PortfolioRoute.jsx";
+import Contact from "./Pages/Contact/ContactRoute.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <Error />,
+    children: [
+      {
+        index: true,
+        element: <HomeRoute />,
+      },
+      {
+        path: "/Portfolio",
+        element: <Portfolio />,
+      },
+      {
+        path: "/Contact",
+        element: <Contact />,
+      },
+      // {
+      //   path: "/Contact",
+      //   element: <Contact />,
+      // },
+    ],
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <RouterProvider router={router} />
+);

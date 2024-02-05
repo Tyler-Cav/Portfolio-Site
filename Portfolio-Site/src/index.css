@@ -31,3 +31,17 @@
 .basicBorder:hover {
   opacity: 25%;
 }
+
+.Name {
+  padding-left: 25px;
+}
+
+.gif {
+  border: 2px solid black;
+  border-bottom-style: none;
+  border-radius: 2%;
+  margin-top: 50px;
+  margin-left: 50px;
+  height: 100px;
+  width: 100px;
+}
