@@ -8,13 +8,13 @@ export default function ContactForm() {
         enctype="text/plain"
       >
         Name:<br></br>
-        <input type="text" name="name" />
+        <input required type="text" name="name" />
         <br></br>
         E-mail:<br></br>
-        <input type="text" name="mail" />
+        <input required type="text" name="mail" />
         <br></br>
         Comment:<br></br>
-        <input type="text" name="comment" size="50" />
+        <input required type="text" name="comment" size="100" />
         <br></br>
         <br></br>
         <input type="submit" value="Send" />

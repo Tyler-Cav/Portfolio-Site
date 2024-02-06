@@ -6,7 +6,6 @@ export default function Portfolio() {
     <>
       <HeaderSection />
       <ProjectCards />
-      <Footer />
     </>
   );
 }

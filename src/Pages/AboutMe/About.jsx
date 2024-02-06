@@ -1,6 +1,5 @@
 import HeaderSection from "../Home/Header/HeaderToApp";
 import Photo from "./Components/photo";
-import Footer from "../Home/Footer/Footer";
 import Bio from "./Components/bio";
 
 export default function About() {
@@ -11,7 +10,6 @@ export default function About() {
         <Photo />
         <Bio />
       </main>
-      <Footer />
     </>
   );
 }

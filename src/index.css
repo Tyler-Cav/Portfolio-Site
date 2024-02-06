@@ -52,12 +52,13 @@
 }
 /* Footer for each page */
 .footer {
-  border-top: 8px solid black;
+  border-top: 8px solid #DAA49A;
   border-radius: 2px;
   position:absolute;
   bottom:0;
   width:100%;
   text-align: center;
+  background-color: #A9BCD0;
   /* Footer Images */
 }
 .imageLink {
@@ -84,4 +85,8 @@
 
 .bio {
   margin-left: 2%;
+}
+
+.headerbackground {
+  background-color: #373F51;
 }

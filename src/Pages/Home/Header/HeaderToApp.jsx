@@ -10,7 +10,7 @@ export default function HeaderSection() {
     <>
       <header>
         <Paper>
-          <Grid container spacing={0}>
+          <Grid className="headerbackground" container spacing={0}>
             <Name />
             <Nav />
           </Grid>
