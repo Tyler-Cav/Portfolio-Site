@@ -1,6 +1,7 @@
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import { Link, useLocation } from "react-router-dom";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 export default function Nav() {
   const linkStyle = { border: "1px black", padding: "5px" };
