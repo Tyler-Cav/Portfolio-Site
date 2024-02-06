@@ -8,12 +8,14 @@ import Grid from "@mui/material/Grid";
 export default function HeaderSection() {
   return (
     <>
-      <Paper>
-        <Grid container spacing={0}>
-          <Name />
-          <Nav />
-        </Grid>
-      </Paper>
+      <header>
+        <Paper>
+          <Grid container spacing={0}>
+            <Name />
+            <Nav />
+          </Grid>
+        </Paper>
+      </header>
     </>
   );
 }

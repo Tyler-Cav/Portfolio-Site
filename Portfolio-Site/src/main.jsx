@@ -5,6 +5,7 @@ import "./index.css";
 import HomeRoute from "./Pages/Home/HomeRoute.jsx";
 import Portfolio from "./Pages/Portfolio/PortfolioRoute.jsx";
 import Contact from "./Pages/Contact/ContactRoute.jsx";
+import About from "./Pages/AboutMe/About.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <HomeRoute />,
+        element: <About />,
       },
       {
         path: "/Portfolio",
@@ -25,10 +26,6 @@ const router = createBrowserRouter([
         path: "/Contact",
         element: <Contact />,
       },
-      // {
-      //   path: "/Contact",
-      //   element: <Contact />,
-      // },
     ],
   },
 ]);

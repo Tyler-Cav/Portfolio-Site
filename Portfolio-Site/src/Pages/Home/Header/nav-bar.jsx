@@ -19,10 +19,7 @@ export default function Nav() {
           }}
         >
           <Link to="/" style={linkStyle}>
-            <Button variant="contained">Home</Button>
-          </Link>
-          <Link style={linkStyle}>
-            <Button variant="contained">About Me</Button>
+            <Button variant="contained">AboutMe</Button>
           </Link>
           <Link to="/Portfolio" style={linkStyle}>
             <Button variant="contained">Portfolio</Button>
