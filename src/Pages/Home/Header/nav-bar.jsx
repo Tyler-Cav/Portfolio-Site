@@ -28,7 +28,7 @@ export default function Nav({ color }) {
   const currentPage = useLocation().pathname;
 
   return (
-    <Grid item xs={8}>
+    <Grid item xs={12} lg={8}>
       <nav className="main-header-menu">
         <section
           style={{
