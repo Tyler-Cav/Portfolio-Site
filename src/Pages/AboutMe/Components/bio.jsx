@@ -6,13 +6,13 @@ export default function Bio() {
         <p>A 2018 West Chester Business Management Graduate. </p>
         <br></br>
         <br></br>
-        <p>Enjoys Cats</p>
+        <p>Placeholder</p>
         <br></br>
         <br></br>
-        <p>Needs a job</p>
+        <p>Placeholder</p>
         <br></br>
         <br></br>
-        <p>testestesttest</p>
+        <p>Placeholder</p>
       </section>
     </>
   );

@@ -1,3 +1,25 @@
+@charset "utf-8";
+	.bio
+{
+  
+  margin-top: 10px;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-bottom: 25px;
+  padding: 30px;
+  background: -moz-radial-gradient(49.54% 50%, ellipse farthest-corner, rgba(55, 63, 81, 1) 15.64%, rgba(54, 62, 79, 0.91) 55.22%, rgba(49, 56, 72, 0.87) 69.48%, rgba(41, 47, 61, 0.85) 79.64%, rgba(30, 34, 44, 0.83) 87.86%, rgba(15, 17, 22, 0.81) 94.81%, rgba(0, 0, 0, 0.8) 100%);
+  background: -webkit-radial-gradient(49.54% 50%, ellipse farthest-corner, rgba(55, 63, 81, 1) 15.64%, rgba(54, 62, 79, 0.91) 55.22%, rgba(49, 56, 72, 0.87) 69.48%, rgba(41, 47, 61, 0.85) 79.64%, rgba(30, 34, 44, 0.83) 87.86%, rgba(15, 17, 22, 0.81) 94.81%, rgba(0, 0, 0, 0.8) 100%);
+  background: -webkit-gradient(radial,49.54% 50% ,91.48 , 49.54% 50%, 584.85 ,color-stop(0.1564,rgba(55, 63, 81, 1) ),color-stop(0.5522,rgba(54, 62, 79, 0.91) ),color-stop(0.6948,rgba(49, 56, 72, 0.87) ),color-stop(0.7964,rgba(41, 47, 61, 0.85) ),color-stop(0.8786,rgba(30, 34, 44, 0.83) ),color-stop(0.9481,rgba(15, 17, 22, 0.81) ),color-stop(1,rgba(0, 0, 0, 0.8) ));
+  background: -o-radial-gradient(49.54% 50%, ellipse farthest-corner, rgba(55, 63, 81, 1) 15.64%, rgba(54, 62, 79, 0.91) 55.22%, rgba(49, 56, 72, 0.87) 69.48%, rgba(41, 47, 61, 0.85) 79.64%, rgba(30, 34, 44, 0.83) 87.86%, rgba(15, 17, 22, 0.81) 94.81%, rgba(0, 0, 0, 0.8) 100%);
+  background: -ms-radial-gradient(49.54% 50%, ellipse farthest-corner, rgba(55, 63, 81, 1) 15.64%, rgba(54, 62, 79, 0.91) 55.22%, rgba(49, 56, 72, 0.87) 69.48%, rgba(41, 47, 61, 0.85) 79.64%, rgba(30, 34, 44, 0.83) 87.86%, rgba(15, 17, 22, 0.81) 94.81%, rgba(0, 0, 0, 0.8) 100%);
+  background: radial-gradient(49.54% 50%, ellipse farthest-corner, rgba(55, 63, 81, 1) 15.64%, rgba(54, 62, 79, 0.91) 55.22%, rgba(49, 56, 72, 0.87) 69.48%, rgba(41, 47, 61, 0.85) 79.64%, rgba(30, 34, 44, 0.83) 87.86%, rgba(15, 17, 22, 0.81) 94.81%, rgba(0, 0, 0, 0.8) 100%);
+  border-radius: 53px;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 1);
+  color: #A9BCD0
+}
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +28,20 @@
 }
 
 html,body,#root {
-  height: 100%;
-  background-color: grey;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+    background : -moz-linear-gradient(50% 98.66% 90deg,rgba(204, 202, 218, 1) 0%,rgba(203, 200, 217, 0.8) 27.02%,rgba(187, 186, 200, 0.65) 53.27%,rgba(182, 181, 194, 0.6) 61.01%,rgba(182, 181, 194, 0.26) 91.87%,rgba(182, 181, 194, 0.2) 96.94%);
+  background : -webkit-linear-gradient(90deg, rgba(204, 202, 218, 1) 0%, rgba(203, 200, 217, 0.8) 27.02%, rgba(187, 186, 200, 0.65) 53.27%, rgba(182, 181, 194, 0.6) 61.01%, rgba(182, 181, 194, 0.26) 91.87%, rgba(182, 181, 194, 0.2) 96.94%);
+  background : -webkit-gradient(linear,50% 98.66% ,50% 0.64% ,color-stop(0,rgba(204, 202, 218, 1) ),color-stop(0.2702,rgba(203, 200, 217, 0.8) ),color-stop(0.5327,rgba(187, 186, 200, 0.65) ),color-stop(0.6101,rgba(182, 181, 194, 0.6) ),color-stop(0.9187,rgba(182, 181, 194, 0.26) ),color-stop(0.9694,rgba(182, 181, 194, 0.2) ));
+  background : -o-linear-gradient(90deg, rgba(204, 202, 218, 1) 0%, rgba(203, 200, 217, 0.8) 27.02%, rgba(187, 186, 200, 0.65) 53.27%, rgba(182, 181, 194, 0.6) 61.01%, rgba(182, 181, 194, 0.26) 91.87%, rgba(182, 181, 194, 0.2) 96.94%);
+  background : -ms-linear-gradient(90deg, rgba(204, 202, 218, 1) 0%, rgba(203, 200, 217, 0.8) 27.02%, rgba(187, 186, 200, 0.65) 53.27%, rgba(182, 181, 194, 0.6) 61.01%, rgba(182, 181, 194, 0.26) 91.87%, rgba(182, 181, 194, 0.2) 96.94%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#CCCADA', endColorstr='#B6B5C2' ,GradientType=0)";
+  background : linear-gradient(0deg, rgba(204, 202, 218, 1) 0%, rgba(203, 200, 217, 0.8) 27.02%, rgba(187, 186, 200, 0.65) 53.27%, rgba(182, 181, 194, 0.6) 61.01%, rgba(182, 181, 194, 0.26) 91.87%, rgba(182, 181, 194, 0.2) 96.94%);
+  border-color : #000000;
+  border-color : rgba(0, 0, 0, 1);
+  border-width : 1px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B6B5C2',endColorstr='#CCCADA' , GradientType=0);
 }
 
 /*Portfolio Section */
@@ -49,11 +83,8 @@ html,body,#root {
 
   /* Hello Gif for contact page */
 .gif {
-  border: 2px solid black;
-  border-bottom-style: none;
-  border-radius: 2%;
   margin-top: 50px;
-  margin-left: 50px;
+  margin-bottom: 1%;
   height: 100px;
   width: 100px;
 }
@@ -61,8 +92,7 @@ html,body,#root {
 .footer {
   border-top: 8px solid #DAA49A;
   border-radius: 2px;
-  position:absolute;
-  bottom:0;
+  margin-top: auto;
   width:100%;
   text-align: center;
   background-color: #A9BCD0;
@@ -89,7 +119,8 @@ html,body,#root {
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
 }
 
-.bio {
+
+/* .bio {
   margin-top: 10px;
   margin-left: 2%;
   margin-right: 2%;
@@ -97,7 +128,7 @@ html,body,#root {
   border-radius: 10px;
   padding: 10px;
   background-color: #D8DBE2 ;
-}
+} */
 
 .headerbackground {
   background-color: #373F51;
