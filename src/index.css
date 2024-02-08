@@ -83,6 +83,7 @@ html,body,#root {
 
   /* Hello Gif for contact page */
 .gif {
+  border-radius: 25%;
   margin-top: 50px;
   margin-bottom: 1%;
   height: 100px;
