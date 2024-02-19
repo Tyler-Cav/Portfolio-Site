@@ -1,4 +1,6 @@
 import { Box, ThemeProvider, createTheme } from "@mui/system";
+import avengersPic from '../../../assets/avengersAsset.png'
+
 let projects = {
   avengers: "https://rhemlock7.github.io/avenger-initiative/",
   weather: "https://tyler-cav.github.io/WeatherTrackerAPI/ ",
@@ -11,7 +13,7 @@ let projects = {
 function ProjectCards() {
   return (
     <div className="projectBox">
-      <a className="basicBorder" href={projects.avengers}>
+      {/* <a className="basicBorder" href={projects.avengers}>
         Avengers Initiative
       </a>
       <a className="basicBorder" href={projects.weather}>
@@ -28,8 +30,72 @@ function ProjectCards() {
       </a>
       <a className="basicBorder" href={projects.SQL}>
         SQL
+      </a> */}
+      <a id="aTag" href={projects.avengers}>
+        <div className="cardFrame">
+          <img id="portfolioImage" src={avengersPic} alt="Marvel Avengers Comic Book Photo including Captain America, Thor, Black Panther, and Iron Man"/>
+          <div className="cardFrameTextBox">
+            <p id="cardMobileTextHeader">Avengers Initiative</p>
+            <p id="cardMobileDescription">A personal custom workout trainer built around Marvel character physique</p>
+          </div>
+        </div>
+      </a>
+      <a id="aTag" href={projects.avengers}>
+        <div className="cardFrame">
+          <img id="portfolioImage" src={avengersPic} alt="Marvel Avengers Comic Book Photo including Captain America, Thor, Black Panther, and Iron Man"/>
+          <div className="cardFrameTextBox">
+            <p id="cardMobileTextHeader">Avengers Initiative</p>
+            <p id="cardMobileDescription">A personal custom workout trainer built around Marvel character physique</p>
+          </div>
+        </div>
+      </a>
+      <a id="aTag" href={projects.avengers}>
+        <div className="cardFrame">
+          <img id="portfolioImage" src={avengersPic} alt="Marvel Avengers Comic Book Photo including Captain America, Thor, Black Panther, and Iron Man"/>
+          <div className="cardFrameTextBox">
+            <p id="cardMobileTextHeader">Avengers Initiative</p>
+            <p id="cardMobileDescription">A personal custom workout trainer built around Marvel character physique</p>
+          </div>
+        </div>
+      </a>
+      <a id="aTag" href={projects.avengers}>
+        <div className="cardFrame">
+          <img id="portfolioImage" src={avengersPic} alt="Marvel Avengers Comic Book Photo including Captain America, Thor, Black Panther, and Iron Man"/>
+          <div className="cardFrameTextBox">
+            <p id="cardMobileTextHeader">Avengers Initiative</p>
+            <p id="cardMobileDescription">A personal custom workout trainer built around Marvel character physique</p>
+          </div>
+        </div>
+      </a>
+      <a id="aTag" href={projects.avengers}>
+        <div className="cardFrame">
+          <img id="portfolioImage" src={avengersPic} alt="Marvel Avengers Comic Book Photo including Captain America, Thor, Black Panther, and Iron Man"/>
+          <div className="cardFrameTextBox">
+            <p id="cardMobileTextHeader">Avengers Initiative</p>
+            <p id="cardMobileDescription">A personal custom workout trainer built around Marvel character physique</p>
+          </div>
+        </div>
+      </a>
+      <a id="aTag" href={projects.avengers}>
+        <div className="cardFrame">
+          <img id="portfolioImage" src={avengersPic} alt="Marvel Avengers Comic Book Photo including Captain America, Thor, Black Panther, and Iron Man"/>
+          <div className="cardFrameTextBox">
+            <p id="cardMobileTextHeader">Avengers Initiative</p>
+            <p id="cardMobileDescription">A personal custom workout trainer built around Marvel character physique</p>
+          </div>
+        </div>
+      </a>
+      <a id="aTag" href={projects.avengers}>
+        <div className="cardFrame">
+          <img id="portfolioImage" src={avengersPic} alt="Marvel Avengers Comic Book Photo including Captain America, Thor, Black Panther, and Iron Man"/>
+          <div className="cardFrameTextBox">
+            <p id="cardMobileTextHeader">Avengers Initiative</p>
+            <p id="cardMobileDescription">A personal custom workout trainer built around Marvel character physique</p>
+          </div>
+        </div>
       </a>
     </div>
+    
   );
 }
 
