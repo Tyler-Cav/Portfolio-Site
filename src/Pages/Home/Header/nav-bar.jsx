@@ -54,11 +54,11 @@ export default function Nav({ color }) {
                 Contact
               </Button>
             </Link>
-            <div style={linkStyle}>
+            {/* <div style={linkStyle}>
               <Button variant="contained" color="Grey">
                 Resume
               </Button>
-            </div>
+            </div> */}
           </ThemeProvider>
         </section>
       </nav>
