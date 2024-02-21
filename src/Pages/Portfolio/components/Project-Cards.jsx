@@ -36,16 +36,16 @@ function ProjectCards() {
           <img id="portfolioImage" src={avengersPic} alt="Marvel Avengers Comic Book Photo including Captain America, Thor, Black Panther, and Iron Man"/>
           <div className="cardFrameTextBox">
             <p id="cardMobileTextHeader">Avengers Initiative</p>
-            <p id="cardMobileDescription">A personal custom workout trainer built around Marvel character physique</p>
+            <p id="cardMobileDescription">A personal custom workout trainer built around Marvel character physique.</p>
           </div>
         </div>
       </a>
-      <a id="aTag" href={projects.avengers}>
+      <a id="aTag" href={projects.weather}>
         <div className="cardFrame">
-          <img id="portfolioImage" src={avengersPic} alt="Marvel Avengers Comic Book Photo including Captain America, Thor, Black Panther, and Iron Man"/>
+          <img id="portfolioImage" src={avengersPic} alt=""/>
           <div className="cardFrameTextBox">
-            <p id="cardMobileTextHeader">Avengers Initiative</p>
-            <p id="cardMobileDescription">A personal custom workout trainer built around Marvel character physique</p>
+            <p id="cardMobileTextHeader">Weather Tracker</p>
+            <p id="cardMobileDescription">A weather tracker in which you can input any city and recieve live weather information.</p>
           </div>
         </div>
       </a>
