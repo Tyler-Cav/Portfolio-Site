@@ -32,6 +32,9 @@ html,body,#root {
   height:100%;
   display: flex;
   flex-direction: column;
+  background-image: url(Test-Portfolio-BackGround.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
     /* background : -moz-linear-gradient(50% 98.66% 90deg,rgba(204, 202, 218, 1) 0%,rgba(203, 200, 217, 0.8) 27.02%,rgba(187, 186, 200, 0.65) 53.27%,rgba(182, 181, 194, 0.6) 61.01%,rgba(182, 181, 194, 0.26) 91.87%,rgba(182, 181, 194, 0.2) 96.94%);
   background : -webkit-linear-gradient(90deg, rgba(204, 202, 218, 1) 0%, rgba(203, 200, 217, 0.8) 27.02%, rgba(187, 186, 200, 0.65) 53.27%, rgba(182, 181, 194, 0.6) 61.01%, rgba(182, 181, 194, 0.26) 91.87%, rgba(182, 181, 194, 0.2) 96.94%);
   background : -webkit-gradient(linear,50% 98.66% ,50% 0.64% ,color-stop(0,rgba(204, 202, 218, 1) ),color-stop(0.2702,rgba(203, 200, 217, 0.8) ),color-stop(0.5327,rgba(187, 186, 200, 0.65) ),color-stop(0.6101,rgba(182, 181, 194, 0.6) ),color-stop(0.9187,rgba(182, 181, 194, 0.26) ),color-stop(0.9694,rgba(182, 181, 194, 0.2) ));
@@ -213,4 +216,8 @@ html,body,#root {
   font-size: 12px;
   margin-top: 10px;
   padding-left: 5px;
+}
+
+.backgroundTest {
+  background-image: url(public/Test-Portfolio-BackGround.svg);
 }
