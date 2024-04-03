@@ -99,12 +99,12 @@ html,body,#root {
 }
 /* Footer for each page */
 .footer {
-  border-top: 8px solid #DAA49A;
+  border-top: 8px solid white;
   border-radius: 2px;
   margin-top: auto;
   width:100%;
   text-align: center;
-  background-color: #A9BCD0;
+  background-color: #373F51;
   /* Footer Images */
 }
 .imageLink {
