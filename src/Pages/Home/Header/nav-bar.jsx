@@ -1,7 +1,7 @@
+import "@mui/material";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import { Link, useLocation } from "react-router-dom";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import {
   createTheme,
   alpha,
@@ -28,7 +28,7 @@ export default function Nav({ color }) {
   const currentPage = useLocation().pathname;
 
   return (
-    <Grid item xs={12} lg={8}>
+    <Grid sx={{ display: { xs: "none", sm: "none", lg: "block" } }} item lg={8}>
       <nav className="main-header-menu">
         <section
           style={{

@@ -1,0 +1,74 @@
+import * as React from "react";
+import IconButton from "@mui/material/IconButton";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import MoreVertIcon from "@mui/icons-material/MoreVert";
+import Grid from "@mui/material/Grid";
+import { useNavigate } from "react-router-dom";
+
+const options = ["About Me", "Portfolio", "Contact"];
+const paths = ["/", "/Portfolio", "/Contact"];
+
+const ITEM_HEIGHT = 48;
+
+export default function LongMenu() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  //TODO: FIGURE OUT HOW TO FIX PATHWAYS ON MOBILE BELOW. LINES 24-28 and 58-62
+  let navigate = useNavigate();
+  const routeChange = (index) => {
+    console.log(index);
+    let pathway = paths[index];
+    navigate(pathway);
+  };
+
+  return (
+    <Grid sx={{ display: { xs: "block", lg: "none" } }} item sm={1}>
+      <IconButton
+        aria-label="more"
+        id="long-button"
+        aria-controls={open ? "long-menu" : undefined}
+        aria-expanded={open ? "true" : undefined}
+        sx={{ color: "white" }}
+        aria-haspopup="true"
+        onClick={handleClick}
+      >
+        <MoreVertIcon />
+      </IconButton>
+      <Menu
+        id="long-menu"
+        MenuListProps={{
+          "aria-labelledby": "long-button",
+        }}
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+        PaperProps={{
+          style: {
+            maxHeight: ITEM_HEIGHT * 4.5,
+            width: "20ch",
+          },
+        }}
+      >
+        {options.map((option, index) => (
+          <MenuItem
+            key={option}
+            selected={option === "Pyxis"}
+            onClick={() => {
+              routeChange(index);
+            }}
+          >
+            {option}
+          </MenuItem>
+        ))}
+      </Menu>
+    </Grid>
+  );
+}

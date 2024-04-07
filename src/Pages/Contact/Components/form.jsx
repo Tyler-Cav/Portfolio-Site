@@ -50,7 +50,7 @@ export default function Contact() {
           }}
         >
           <Gif />
-          <Typography component="h1" variant="h5">
+          <Typography component="h1" variant="h5" sx={{ color: "white" }}>
             Let's Chat!
           </Typography>
           <Box
@@ -58,7 +58,7 @@ export default function Contact() {
             noValidate
             // onSubmit={handleSubmit}
             sx={{ mt: 3 }}
-          >
+          > 
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6}>
                 <TextField
@@ -71,6 +71,9 @@ export default function Contact() {
                   id="firstName"
                   label="First Name"
                   autoFocus
+                  sx={{
+                    background: "white",
+                  }}
                 />
               </Grid>
               <Grid item xs={12} sm={6}>
@@ -83,6 +86,9 @@ export default function Contact() {
                   label="Last Name"
                   name="lastName"
                   autoComplete="family-name"
+                  sx={{
+                    background: "white",
+                  }}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -95,6 +101,9 @@ export default function Contact() {
                   label="Email Address"
                   name="email"
                   autoComplete="email"
+                  sx={{
+                    background: "white",
+                  }}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -109,6 +118,9 @@ export default function Contact() {
                   id="Message"
                   multiline={true}
                   rows="3"
+                  sx={{
+                    background: "white",
+                  }}
                 />
               </Grid>
             </Grid>

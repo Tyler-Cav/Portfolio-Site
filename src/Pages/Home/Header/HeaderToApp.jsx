@@ -1,8 +1,8 @@
 import Name from "./header-name";
 import Nav from "./nav-bar";
+import LongMenu from "./navbarMobile";
 
 import Paper from "@mui/material/Paper";
-import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
 export default function HeaderSection() {
@@ -13,6 +13,7 @@ export default function HeaderSection() {
           <Grid className="headerbackground" container spacing={0}>
             <Name />
             <Nav />
+            <LongMenu />
           </Grid>
         </Paper>
       </header>
