@@ -6,8 +6,8 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Grid from "@mui/material/Grid";
 import { useNavigate } from "react-router-dom";
 
-const options = ["About Me", "Portfolio", "Contact", "Resume"];
-const paths = ["/", "/Portfolio", "/Contact", "Resume"];
+const options = ["About Me", "Portfolio", "Contact"];
+const paths = ["/", "/Portfolio", "/Contact"];
 
 const ITEM_HEIGHT = 48;
 
@@ -25,8 +25,8 @@ export default function LongMenu() {
   let navigate = useNavigate();
   const routeChange = (index) => {
     console.log(index);
-    // let pathway = paths[index];
-    // navigate(pathway);
+    let pathway = paths[index];
+    navigate(pathway);
   };
 
   return (
@@ -61,7 +61,9 @@ export default function LongMenu() {
           <MenuItem
             key={option}
             selected={option === "Pyxis"}
-            onClick={routeChange(index)}
+            onClick={() => {
+              routeChange(index);
+            }}
           >
             {option}
           </MenuItem>
