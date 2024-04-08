@@ -21,7 +21,6 @@ export default function LongMenu() {
     setAnchorEl(null);
   };
 
-  //TODO: FIGURE OUT HOW TO FIX PATHWAYS ON MOBILE BELOW. LINES 24-28 and 58-62
   let navigate = useNavigate();
   const routeChange = (index) => {
     console.log(index);
