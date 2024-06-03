@@ -6,6 +6,7 @@ import HomeRoute from "./Pages/Home/HomeRoute.jsx";
 import Portfolio from "./Pages/Portfolio/PortfolioRoute.jsx";
 import Contact from "./Pages/Contact/ContactRoute.jsx";
 import About from "./Pages/AboutMe/About.jsx";
+import Designs from "./Pages/Designs/designTest.jsx"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
         path: "/Contact",
         element: <Contact />,
       },
+      {
+        path: "/Designs",
+        element: <Designs />,
+      }
     ],
   },
 ]);
