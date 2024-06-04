@@ -23,7 +23,6 @@ export default function LongMenu() {
 
   let navigate = useNavigate();
   const routeChange = (index) => {
-    console.log(index);
     let pathway = paths[index];
     navigate(pathway);
   };

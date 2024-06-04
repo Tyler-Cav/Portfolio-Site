@@ -8,6 +8,7 @@ import {
   getContrastRatio,
   ThemeProvider,
 } from "@mui/material/styles";
+import { LineWeight } from "@mui/icons-material";
 
 const greyBase = "#A9BCD0";
 const greyMain = alpha(greyBase, 0.7);
@@ -24,7 +25,7 @@ const theme = createTheme({
 });
 
 export default function Nav({ color }) {
-  const linkStyle = { border: "1px black", padding: "5px" };
+  const linkStyle = { border: "1px black", padding: "5px", LineWeight: '0px' };
   const currentPage = useLocation().pathname;
 
   return (
