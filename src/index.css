@@ -214,5 +214,5 @@ html,body,#root {
 }
 
 .backgroundTest {
-  background-image: url(public/Test-Portfolio-BackGround.svg);
+  background-image: url(/Test-Portfolio-BackGround.svg);
 }
