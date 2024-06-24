@@ -1,6 +1,9 @@
 import Grid from "@mui/material/Grid";
 import Item from "@mui/material/Grid"
+import HellDivers from '../../assets/Helldiver-Tyler.png'
 import Glitch from '../../assets/GlitchyText.svg'
+import TestBackground from '../../assets/Test-Portfolio-BackGround.svg'
+import CuteSkull from '../../assets/CuteSkull.png'
 
 export default function testDesign() {
     return (
@@ -9,7 +12,7 @@ export default function testDesign() {
                 <Grid container spacing={2} item lg={6} sm={12} xs={12}>
                     <Grid item lg={6} sm={12} xs={12}>
                         <Item style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', justifyContent: 'center', background: 'rgba(250,250,250, 70%)', marginTop: '25px', height: "450px", border: "1px solid", borderRadius: '5px' }}>
-                            <img style={{ height: '100px' }} src="src/assets/Helldiver-Tyler.png" alt="" />
+                            <img style={{ height: '100px' }} src={HellDivers} alt="" />
                         </Item>
                     </Grid>
                     <Grid item lg={6} sm={12} xs={12}>
@@ -21,12 +24,12 @@ export default function testDesign() {
                 <Grid container spacing={2} item lg={6} sm={12} xs={12}>
                     <Grid item lg={6} sm={12} xs={12}>
                         <Item style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', justifyContent: 'center', background: 'rgba(250,250,250, 70%)', marginTop: '25px', height: "450px", border: "1px solid", borderRadius: '5px' }}>
-                            <img style={{ height: '400px', maxWidth: '400px', borderRadius: '2%' }} src="src/assets/Test-Portfolio-BackGround.svg" alt="" />
+                            <img style={{ height: '400px', maxWidth: '400px', borderRadius: '2%' }} src={TestBackground} alt="" />
                         </Item>
                     </Grid>
                     <Grid item lg={6} sm={12} xs={12}>
                         <Item style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', justifyContent: 'center', background: 'rgba(250,250,250, 70%)', marginTop: '25px', height: "450px", border: "1px solid", borderRadius: '5px' }}>
-                            <img style={{ height: '200px', margin: '1px' }} src="src/assets/CuteSkull.png" alt="" />
+                            <img style={{ height: '200px', margin: '1px' }} src={CuteSkull} alt="" />
                         </Item>
                     </Grid>
                 </Grid>
