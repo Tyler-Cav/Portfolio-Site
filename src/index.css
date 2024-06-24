@@ -27,7 +27,7 @@ html,body,#root {
   height:100%;
   display: flex;
   flex-direction: column;
-  background-image: url(Test-Portfolio-BackGround.svg);
+  background-image: url(src/assets/Test-Portfolio-BackGround.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -214,5 +214,5 @@ html,body,#root {
 }
 
 .backgroundTest {
-  background-image: url(/Test-Portfolio-BackGround.svg);
+  background-image: url(src/assets/Test-Portfolio-BackGround.svg);
 }
