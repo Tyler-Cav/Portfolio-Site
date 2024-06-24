@@ -1,5 +1,6 @@
 import Grid from "@mui/material/Grid";
 import Item from "@mui/material/Grid"
+import Glitch from '../../assets/GlitchyText.svg'
 
 export default function testDesign() {
     return (
@@ -13,7 +14,7 @@ export default function testDesign() {
                     </Grid>
                     <Grid item lg={6} sm={12} xs={12}>
                         <Item style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', justifyContent: 'center', background: 'rgba(250,250,250, 70%)', marginTop: '25px', height: "450px", border: "1px solid", borderRadius: '5px' }}>
-                            <img style={{ height: '60px' }} src="src/assets/GlitchyText.svg" alt="" />
+                            <img style={{ height: '60px' }} src={Glitch} alt="" />
                         </Item>
                     </Grid>
                 </Grid>
