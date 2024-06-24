@@ -7,7 +7,8 @@ let projects = {
   SVG: "https://github.com/Tyler-Cav/SVG-Creator",
   ReadMe: "https://github.com/Tyler-Cav/ReadMe-Template-Creator",
   SQL: "https://github.com/Tyler-Cav/Back-End-eCommerce",
-  reaction: "https://reaction-simulator.netlify.app/"
+  reaction: "https://reaction-simulator.netlify.app/",
+  scraper: "https://github.com/Tyler-Cav/JobScraper"
 };
 
 function ProjectCards() {
@@ -33,7 +34,7 @@ function ProjectCards() {
       </a> */}
       <a id="aTag" href={projects.avengers}>
         <div className="cardFrame">
-          <img id="portfolioImage" src={avengersPic} alt="Marvel Avengers Comic Book Photo including Captain America, Thor, Black Panther, and Iron Man"/>
+          <img id="portfolioImage" src={avengersPic} alt="Marvel Avengers Comic Book Photo including Captain America, Thor, Black Panther, and Iron Man" />
           <div className="cardFrameTextBox">
             <p id="cardMobileTextHeader">Avengers Initiative</p>
             <p id="cardMobileDescription">A personal custom workout trainer built around Marvel character physique.</p>
@@ -94,8 +95,17 @@ function ProjectCards() {
           </div>
         </div>
       </a>
+      <a id="aTag" href={projects.scraper}>
+        <div className="cardFrame">
+          {/* <img id="portfolioImage" src={avengersPic} */}
+          <div className="cardFrameTextBox">
+            <p id="cardMobileTextHeader">Job Scraper</p>
+            <p id="cardMobileDescription">A python job scraper using a Listrak API.</p>
+          </div>
+        </div>
+      </a>
     </div>
-    
+
   );
 }
 

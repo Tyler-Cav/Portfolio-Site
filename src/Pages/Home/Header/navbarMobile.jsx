@@ -6,8 +6,8 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Grid from "@mui/material/Grid";
 import { useNavigate } from "react-router-dom";
 
-const options = ["About Me", "Portfolio", "Contact"];
-const paths = ["/", "/Portfolio", "/Contact"];
+const options = ["About Me", "Portfolio", "Contact", "Designs"];
+const paths = ["/", "/Portfolio", "/Contact", "/Designs"];
 
 const ITEM_HEIGHT = 48;
 
@@ -21,10 +21,8 @@ export default function LongMenu() {
     setAnchorEl(null);
   };
 
-  //TODO: FIGURE OUT HOW TO FIX PATHWAYS ON MOBILE BELOW. LINES 24-28 and 58-62
   let navigate = useNavigate();
   const routeChange = (index) => {
-    console.log(index);
     let pathway = paths[index];
     navigate(pathway);
   };
