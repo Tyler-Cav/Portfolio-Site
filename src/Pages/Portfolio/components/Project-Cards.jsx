@@ -14,24 +14,6 @@ let projects = {
 function ProjectCards() {
   return (
     <div className="projectBox">
-      {/* <a className="basicBorder" href={projects.avengers}>
-        Avengers Initiative
-      </a>
-      <a className="basicBorder" href={projects.weather}>
-        Weather Tracker
-      </a>
-      <a className="basicBorder" href={projects.passGen}>
-        Password Generator
-      </a>
-      <a className="basicBorder" href={projects.SVG}>
-        SVG Shape Creator
-      </a>
-      <a className="basicBorder" href={projects.ReadMe}>
-        Read-Me Generator
-      </a>
-      <a className="basicBorder" href={projects.SQL}>
-        SQL
-      </a> */}
       <a id="aTag" href={projects.avengers}>
         <div className="cardFrame">
           <img id="portfolioImage" src={avengersPic} alt="Marvel Avengers Comic Book Photo including Captain America, Thor, Black Panther, and Iron Man" />
