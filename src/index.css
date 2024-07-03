@@ -23,7 +23,7 @@
   font-family: "Roboto";
 }
 
-/* Currently hiding background effect due to odd picture cutoff */
+
 html,body,#root {
   height:100%;
   display: flex;
