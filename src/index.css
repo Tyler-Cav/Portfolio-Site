@@ -1,4 +1,5 @@
 @charset "utf-8";
+/* For AboutMe Section */
 	.bio
 {
   
@@ -27,6 +28,10 @@ html,body,#root {
   height:100%;
   display: flex;
   flex-direction: column;
+  background-image: url(src/assets/Test-Portfolio-BackGround.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /*Portfolio Section */
@@ -67,8 +72,8 @@ footer {
   width:100%;
   text-align: center;
   background-color: #373F51;
-  /* Footer Images */
 }
+  /* Footer Images */
 .imageLink {
   margin-top: 20px;
   margin-left: 20px;
@@ -80,26 +85,6 @@ footer {
 .imageLink:hover {
   opacity: 25%;
 }
-
-.self-photo {
-  margin-top: 10px;
-  margin-left: 20px;
-  height: 100px;
-  width: 80px;
-  border-radius: 50%;
-  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
-}
-
-
-/* .bio {
-  margin-top: 10px;
-  margin-left: 2%;
-  margin-right: 2%;
-  border: 3px solid black;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: #D8DBE2 ;
-} */
 
 .headerbackground {
   background-color: #373F51;
@@ -133,9 +118,9 @@ footer {
   margin-bottom: 10px;
   filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=4, Color='#231F20') progid:DXImageTransform.Microsoft.gradient(startColorstr='#0F103F',endColorstr='#0F103F' , GradientType=0);
 }
-
+/* Hover for portfolio card frames */
 .cardFrame:hover {
-  opacity: 75%;
+  opacity: 90%;
 }
 .cardFrameTextBox
 {
@@ -181,9 +166,3 @@ footer {
   padding-left: 5px;
 }
 
-.backgroundTest {
-  background-image: url(src/assets/Test-Portfolio-BackGround.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
