@@ -1,3 +1,5 @@
+import darkMode from './darkmode'
+
 export default function Bio() {
   return (
     <section className="bio">
