@@ -13,8 +13,29 @@
   box-shadow: -5px 5px 10px rgba(0, 0, 0, 1);
   color: #48586a
 }
-
-
+/*Switching between light and dark mode */
+.lightModeStyle {
+  margin-top: 10px;
+  margin-left: 2%;
+  margin-right: "2%";
+  width: 20%;
+  padding: 10px;
+  background-Color: rgba(255,255,255, 85%);
+  border-radius: 33px;
+  box-shadow: -2px 2px 10px rgba(0, 0, 0, 25);
+  color: #48586a
+}
+.darkModeStyle {
+  margin-top: 10px;
+  margin-left: 2%;
+  margin-right: "2%";
+  width: 20%;
+  padding: 10px;
+  background-Color: gray;
+  border-radius: 33px;
+  box-shadow: -2px 2px 10px rgba(0, 0, 0, 25);
+  color: white
+}
 
 * {
   margin: 0;

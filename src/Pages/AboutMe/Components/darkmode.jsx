@@ -1,21 +1,32 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import '../../../index.css'
 
 
-
-export default function button() {
+export default function Button(props) {
     let [lightSwitch, setMode] = useState({
         mode: 'Dark Mode',
+        active: true
     })
+
     return (
         <button
-            onClick={(e) => {
-                setMode(e => ({
-                    ...e, mode: e.mode === 'Dark Mode' ? 'Light Mode' : 'Dark Mode'
-                }))
+            className={props.classNameChange}
+            onClick={() => {
+                if (props.value === false) {
+                    setMode(e => ({
+                        mode: 'Light Mode'
+                    }))
+                    props.setActive(true)
+                } else {
+                    setMode(e => ({
+                        mode: 'Dark Mode'
+                    }))
+                    props.setActive(false)
+                }
             }
             }>
             {lightSwitch.mode}
-        </button>
+        </button >
     )
 }
 
