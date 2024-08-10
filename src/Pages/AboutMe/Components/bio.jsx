@@ -1,8 +1,6 @@
-import darkMode from './darkmode'
-
-export default function Bio() {
+export default function Bio(props) {
   return (
-    <section className="bio">
+    <section className={props.classNameChange}>
       <h1>Bio</h1>
       <p>A 2018 West Chester Business Management Graduate. </p>
       <br></br>

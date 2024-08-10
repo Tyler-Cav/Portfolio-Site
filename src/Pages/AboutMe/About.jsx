@@ -1,26 +1,47 @@
+import { useState } from 'react';
 import Bio from "./Components/bio";
 import Box from "@mui/system/Box";
 import Grid from "@mui/material/Grid";
 import Item from "@mui/material/Grid"
-import Darkmode from './Components/darkmode'
+import DarkModeButton from './Components/darkmode'
 
-export default function About() {
-  console.log(lightSwitch.mode)
-  return (
-    <Box component="section">
+function AboutMeWithDarkMode() {
+  const [isActive, setIsActive] = useState(false);
+  if (isActive === false) {
+    return (
       <Grid container spacing={0}>
-        <Grid item s={12} md={12} lg={4}>
+        <Grid item s={12} md={12} lg={6}>
           <Item>
-            <Darkmode />
+            <DarkModeButton classNameChange='lightModeStyle' value={isActive} setActive={setIsActive} />
           </Item>
         </Grid>
-        <Grid item lg={4}>
-          <Bio />
-        </Grid>
-        <Grid item lg={4}>
-          <Bio />
+        <Grid item lg={6}>
+          <Bio classNameChange='lightModeStyle' />
         </Grid>
       </Grid>
+    )
+  } else {
+    return (
+      <Grid container spacing={0}>
+        <Grid item s={12} md={12} lg={6}>
+          <Item>
+            <DarkModeButton classNameChange='darkModeStyle' value={isActive} setActive={setIsActive} />
+          </Item>
+        </Grid>
+        <Grid item lg={6}>
+          <Bio classNameChange='darkModeStyle' />
+        </Grid>
+      </Grid>
+    )
+  }
+}
+
+export default function About() {
+
+
+  return (
+    <Box component="section">
+      <AboutMeWithDarkMode />
     </Box>
   );
 }
