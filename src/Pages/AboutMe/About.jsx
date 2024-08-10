@@ -10,26 +10,26 @@ function AboutMeWithDarkMode() {
   if (isActive === false) {
     return (
       <Grid container spacing={0}>
-        <Grid item s={12} md={12} lg={6}>
+        <Grid item xs={12}>
           <Item>
             <DarkModeButton classNameChange='lightModeStyle' value={isActive} setActive={setIsActive} />
           </Item>
         </Grid>
-        <Grid item lg={6}>
-          <Bio classNameChange='lightModeStyle' />
+        <Grid item s={6} md={6} lg={6}>
+          <Bio classNameChange='bioLightChange' />
         </Grid>
       </Grid>
     )
   } else {
     return (
       <Grid container spacing={0}>
-        <Grid item s={12} md={12} lg={6}>
+        <Grid item xs={12}>
           <Item>
             <DarkModeButton classNameChange='darkModeStyle' value={isActive} setActive={setIsActive} />
           </Item>
         </Grid>
-        <Grid item lg={6}>
-          <Bio classNameChange='darkModeStyle' />
+        <Grid item s={6} md={6} lg={6}>
+          <Bio classNameChange='bioDarkChange' />
         </Grid>
       </Grid>
     )
