@@ -1,8 +1,7 @@
 @charset "utf-8";
 /* For AboutMe Section */
-	.bio
+	.bioLightChange
 {
-  
   margin-top: 10px;
   margin-left: 2%;
   margin-right: 2%;
@@ -13,27 +12,39 @@
   box-shadow: -5px 5px 10px rgba(0, 0, 0, 1);
   color: #48586a
 }
+.bioDarkChange
+{
+  margin-top: 10px;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-bottom: 25px;
+  padding: 30px;
+  background-Color: gray;
+  border-radius: 53px;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 1);
+  color: white
+}
 /*Switching between light and dark mode */
 .lightModeStyle {
   margin-top: 10px;
   margin-left: 2%;
   margin-right: "2%";
-  width: 20%;
   padding: 10px;
   background-Color: rgba(255,255,255, 85%);
-  border-radius: 33px;
-  box-shadow: -2px 2px 10px rgba(0, 0, 0, 25);
+  border: none;
+  border-radius: 10px;
+  /* box-shadow: -2px 2px 10px rgba(0, 0, 0, 25); */
   color: #48586a
 }
 .darkModeStyle {
   margin-top: 10px;
   margin-left: 2%;
   margin-right: "2%";
-  width: 20%;
   padding: 10px;
   background-Color: gray;
-  border-radius: 33px;
-  box-shadow: -2px 2px 10px rgba(0, 0, 0, 25);
+  border-radius: 10px;
+  border: none;
+  /* box-shadow: -2px 2px 10px rgba(0, 0, 0, 25); */
   color: white
 }
 
