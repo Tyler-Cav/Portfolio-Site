@@ -1,17 +1,12 @@
 export default function Bio(props) {
   return (
     <section className={props.classNameChange}>
-      <h1>Bio</h1>
-      <p>A 2018 West Chester Business Management Graduate. </p>
-      <br></br>
-      <br></br>
-      <p>Recently finished a University of Pennsylvania fullstack web development program.</p>
-      <br></br>
-      <br></br>
-      <p>Excited to learn and add new projects to my portfolio.</p>
-      <br></br>
-      <br></br>
-      <p>Additional hobbies include vinyl collecting, building keyboards, cooking, and baking.</p>
+      <h1 style={{ fontSize: '25px' }}>{props.title}</h1>
+      <p>{props.date}</p>
+      <ul style={{ paddingLeft: '15px' }}>
+        <li style={{ paddingTop: '15px' }}>{props.description}</li>
+        <li style={{ paddingTop: '15px' }}>{props.descriptionTwo}</li>
+      </ul>
     </section>
   );
 }

@@ -2,6 +2,7 @@
 /* For AboutMe Section */
 	.bioLightChange
 {
+  height: 300px;
   margin-top: 10px;
   margin-left: 5%;
   margin-right: 2%;
@@ -14,6 +15,7 @@
 }
 .bioDarkChange
 {
+  height: 300px;
   margin-top: 10px;
   margin-left: 5%;
   margin-right: 2%;
