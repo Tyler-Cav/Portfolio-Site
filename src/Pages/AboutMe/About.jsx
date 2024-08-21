@@ -30,31 +30,40 @@ function AboutMeWithDarkMode() {
             <DarkModeButton classNameChange='darkModeStyle' value={isActive} setActive={setIsActive} />
           </Item>
         </Grid>
-        <Grid item s={3} md={3} lg={3}>
+        <Grid item xs={9} s={3} md={3} lg={3}>
+          <Item>
+            <Bio classNameChange='bioDarkChange' />
+          </Item>
+        </Grid>
+        <Grid sx={{ display: { xs: 'block', md: 'none' } }} item xs={3}>
+          <Item sx={{ border: '3px white solid' }}>
+            xs=3
+          </Item>
+        </Grid>
+        <Grid sx={{ display: 'flex', justifyContent: 'center', alignContent: 'center', alignItems: 'center' }} item xs={9} s={1} md={1} lg={1}>
+          <Item sx={{ color: 'white', display: 'flex' }}>
+            <Box>
+              _________
+            </Box>
+          </Item>
+        </Grid>
+        <Grid item xs={9} s={3} md={3} lg={3}>
           <Bio classNameChange='bioDarkChange' />
         </Grid>
-        <Grid sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column', justifyContent: 'center' }} item s={1} md={1} lg={1}>
-          <Box sx={{ color: 'white' }} >
-            psum dolor, sit amet consei magnam quas perspiciatis commodi?
-          </Box>
+        <Grid sx={{ display: 'flex', justifyContent: 'center', alignContent: 'center', alignItems: 'center' }} item xs={9} s={1} md={1} lg={1}>
+          <Item sx={{ color: 'white', display: 'flex' }}>
+            <Box>
+              _________>
+            </Box>
+          </Item>
         </Grid>
-        <Grid item s={3} md={3} lg={3}>
+        <Grid item xs={9} s={3} md={3} lg={3}>
           <Bio classNameChange='bioDarkChange' />
-        </Grid>
-        <Grid item s={1} md={1} lg={1}>
-          <h1>INSERT Arrow</h1>
-        </Grid>
-        <Grid item s={3} md={3} lg={3}>
-          <Bio classNameChange='bioDarkChange' />
-        </Grid>
-        <Grid item s={1} md={1} lg={1}>
-          <h1>INSERT Arrow</h1>
         </Grid>
       </Grid >
     )
   }
 }
-
 export default function About() {
 
 
