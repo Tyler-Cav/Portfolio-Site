@@ -20,7 +20,7 @@ function AboutMeWithDarkMode() {
             <DarkModeButton classNameChange='lightModeStyle' value={isActive} setActive={setIsActive} />
           </Item>
         </Grid>
-        <Grid item xs={9} s={3} md={3} lg={3}>
+        <Grid item xs={12} s={3} md={3} lg={3}>
           <Item>
             <Bio classNameChange='bioLightChange'
               title='West Chester University'
@@ -31,13 +31,15 @@ function AboutMeWithDarkMode() {
             />
           </Item>
         </Grid>
-        <Grid sx={{ display: { xs: 'block', md: 'none' } }} item xs={3}>
-          <Item sx={{ border: '3px white solid' }}>
-            xs=3
-          </Item>
+        <Grid sx={{ display: 'flex', display: { xs: 'block', md: 'none' }, border: '3px white solid' }} item xs={12}>
+          <Box sx={{ height: '100px', width: 'auto', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+            <Item sx={{ color: 'white' }}>
+              Downward arrow here
+            </Item>
+          </Box>
         </Grid>
         <Grid sx={{ display: 'flex', justifyContent: 'center', alignContent: 'center', alignItems: 'center' }} item xs={9} s={1} md={1} lg={1}>
-          <Item sx={{ color: 'white', display: 'flex' }}>
+          <Item sx={{ color: 'white', display: 'flex', display: { xs: 'none', md: 'block' } }}>
             <img style={{ maxWidth: '100%', height: 'auto' }} src={Arrow} alt="" />
           </Item>
         </Grid>
@@ -53,7 +55,7 @@ function AboutMeWithDarkMode() {
           </Item>
         </Grid>
         <Grid sx={{ display: 'flex', justifyContent: 'center', alignContent: 'center', alignItems: 'center' }} item xs={9} s={1} md={1} lg={1}>
-          <Item sx={{ color: 'white', display: 'flex' }}>
+          <Item sx={{ color: 'white', display: 'flex', display: { xs: 'none', md: 'block' } }}>
             <img style={{ maxWidth: '100%', height: 'auto' }} src={Arrow} alt="" />
           </Item>
         </Grid>
