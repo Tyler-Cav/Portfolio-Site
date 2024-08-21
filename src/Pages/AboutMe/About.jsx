@@ -16,8 +16,36 @@ function AboutMeWithDarkMode() {
             <DarkModeButton classNameChange='lightModeStyle' value={isActive} setActive={setIsActive} />
           </Item>
         </Grid>
-        <Grid item s={6} md={6} lg={6}>
-          <Bio classNameChange='bioLightChange' />
+        <Grid item xs={9} s={3} md={3} lg={3}>
+          <Item>
+            <Bio classNameChange='bioLightChange' />
+          </Item>
+        </Grid>
+        <Grid sx={{ display: { xs: 'block', md: 'none' } }} item xs={3}>
+          <Item sx={{ border: '3px white solid' }}>
+            xs=3
+          </Item>
+        </Grid>
+        <Grid sx={{ display: 'flex', justifyContent: 'center', alignContent: 'center', alignItems: 'center' }} item xs={9} s={1} md={1} lg={1}>
+          <Item sx={{ color: 'white', display: 'flex' }}>
+            <Box>
+              _________
+            </Box>
+          </Item>
+        </Grid>
+        <Grid item xs={9} s={3} md={3} lg={3}>
+          <Item>
+            <Bio classNameChange='bioLightChange' />
+          </Item>
+        </Grid>
+        <Grid sx={{ display: 'flex', justifyContent: 'center', alignContent: 'center', alignItems: 'center' }} item xs={9} s={1} md={1} lg={1}>
+          <Item sx={{ color: 'white', display: 'flex' }}>
+            <Box>
+              _________>
+            </Box>
+          </Item>
+        </Grid>
+        <Grid item xs={9} s={3} md={3} lg={3}>
           <Bio classNameChange='bioLightChange' />
         </Grid>
       </Grid>
