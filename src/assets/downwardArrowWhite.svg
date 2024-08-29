@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82.92 164.97">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: white;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: white;
+      }
+    </style>
+  </defs>
+  <g id="Artboard4">
+    <path class="cls-2" d="M32.46,9.01v121.76c0,5.63-.09,11.26,0,16.89,0,.08,0,.16,0,.24,0,4.71,4.14,9.22,9,9s9-3.95,9-9V26.13c0-5.63.09-11.26,0-16.89,0-.08,0-.16,0-.24C50.46,4.3,46.32-.21,41.46,0s-9,3.95-9,9h0Z"/>
+    <path class="cls-1" d="M3.03,122.23h76.86s.04.03.02.05l-39.68,39.68s-.03.01-.04,0L3.01,122.28s0-.05.02-.05Z"/>
+  </g>
+</svg>

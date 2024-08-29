@@ -6,13 +6,15 @@ import Item from "@mui/material/Grid"
 import DarkModeButton from './Components/darkmode'
 import Arrow from '../../assets/ArrowWhite.png'
 import ArrowGray from '../../assets/ArrowGray.png'
+import DownwardArrowWhite from '../../assets/downwardArrowWhite.svg'
+import DownwardArrowGray from '../../assets/downwardArrowGray.svg'
 
 //!UPDATED TO HAVE FLEX ON INITIAL DIV IN LIGHT MODE. NEED TO CHANGE DARK MODE WITH FORMATTING. CHECK SOURCE CONTROL
 function AboutMeWithDarkMode() {
   const [isActive, setIsActive] = useState(false);
   if (isActive === false) {
     return (
-      <div style={{ display: 'flex', marginLeft: '50px', marginRight: '50px' }}>
+      <div style={{ display: 'flex', marginLeft: '20px', marginRight: '20px', marginBottom: '10px' }}>
         <Grid style={{ display: 'flex', justifyContent: 'space-between' }} container spacing={0}>
           <Grid item xs={12}>
             <Item>
@@ -30,10 +32,10 @@ function AboutMeWithDarkMode() {
               />
             </Item>
           </Grid>
-          <Grid sx={{ display: 'flex', display: { xs: 'block', md: 'none' }, border: '3px white solid' }} item xs={12}>
+          <Grid sx={{ display: 'flex', display: { xs: 'block', md: 'none' }, marginTop: '10px' }} item xs={12}>
             <Box sx={{ height: '100px', width: 'auto', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-              <Item sx={{ color: 'white' }}>
-                Downward arrow here
+              <Item>
+                <img style={{ height: '100px', width: 'auto' }} src={DownwardArrowWhite} alt="" />
               </Item>
             </Box>
           </Grid>
@@ -52,6 +54,13 @@ function AboutMeWithDarkMode() {
                 descriptionTwo='TBD'
               />
             </Item>
+          </Grid>
+          <Grid sx={{ display: 'flex', display: { xs: 'block', md: 'none' }, marginTop: '10px' }} item xs={12}>
+            <Box sx={{ height: '100px', width: 'auto', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+              <Item>
+                <img style={{ height: '100px', width: 'auto' }} src={DownwardArrowWhite} alt="" />
+              </Item>
+            </Box>
           </Grid>
           <Grid sx={{ display: 'flex', justifyContent: 'center', alignContent: 'center', alignItems: 'center' }} item xs={9} s={1} md={1} lg={1}>
             <Item sx={{ color: 'white', display: 'flex', display: { xs: 'none', md: 'block' } }}>
@@ -72,7 +81,7 @@ function AboutMeWithDarkMode() {
     )
   } else {
     return (
-      <div style={{ display: 'flex', marginLeft: '20px', marginRight: '20px' }}>
+      <div style={{ display: 'flex', marginLeft: '20px', marginRight: '20px', marginBottom: '10px' }}>
         <Grid style={{ display: 'flex', justifyContent: 'space-between' }} container spacing={0}>
           <Grid item xs={12}>
             <Item>
@@ -90,19 +99,13 @@ function AboutMeWithDarkMode() {
               />
             </Item>
           </Grid>
-          <Grid sx={{ display: 'flex', display: { xs: 'block', md: 'none' }, border: '3px white solid' }} item xs={12}>
+          <Grid sx={{ display: 'flex', display: { xs: 'block', md: 'none' }, marginTop: '10px' }} item xs={12}>
             <Box sx={{ height: '100px', width: 'auto', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-              <Item sx={{ color: 'white' }}>
-                Downward arrow here
+              <Item>
+                <img style={{ height: '100px', width: 'auto' }} src={DownwardArrowGray} alt="" />
               </Item>
             </Box>
           </Grid>
-          {/* Below grid was testing out MUI hidden vs. block at different media query sizes */}
-          {/* <Grid sx={{ display: { xs: 'block', md: 'none' } }} item xs={3}>
-          <Item sx={{ border: '3px white solid' }}>
-            xs=3
-          </Item>
-        </Grid> */}
           <Grid sx={{ display: 'flex', justifyContent: 'center', alignContent: 'center', alignItems: 'center' }} item xs={9} s={1} md={1} lg={1}>
             <Item sx={{ color: 'white', display: 'flex', display: { xs: 'none', md: 'block' } }}>
               <img style={{ maxWidth: '100%', height: 'auto' }} src={ArrowGray} alt="" />
@@ -116,6 +119,13 @@ function AboutMeWithDarkMode() {
               description='TBD'
               descriptionTwo='TBD'
             />
+          </Grid>
+          <Grid sx={{ display: 'flex', display: { xs: 'block', md: 'none' }, marginTop: '10px' }} item xs={12}>
+            <Box sx={{ height: '100px', width: 'auto', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+              <Item>
+                <img style={{ height: '100px', width: 'auto' }} src={DownwardArrowGray} alt="" />
+              </Item>
+            </Box>
           </Grid>
           <Grid sx={{ display: 'flex', justifyContent: 'center', alignContent: 'center', alignItems: 'center' }} item xs={9} s={1} md={1} lg={1}>
             <Item sx={{ color: 'white', display: 'flex', display: { xs: 'none', md: 'block' } }}>
