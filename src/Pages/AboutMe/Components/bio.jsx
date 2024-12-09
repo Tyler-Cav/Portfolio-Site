@@ -3,7 +3,7 @@ export default function Bio() {
     <>
       <section className="bio">
         <h1>Bio</h1>
-        <p>A 2018 West Chester Business Management Graduate. </p>
+        <p>A 2018 Business Management Graduate. </p>
         <br></br>
         <br></br>
         <p>Recently finished a University of Pennsylvania fullstack web development program.</p>
