@@ -49,8 +49,8 @@ function AboutMeWithDarkMode() {
               title='QVC'
               status='Account Manager'
               date='2018 - 2023'
-              description='TBD'
-              descriptionTwo='TBD'
+              description='Operated within the electronics merch division.'
+              descriptionTwo='Built and managed high value client relationships while delivering products to our customer via online and television'
             />
           </Item>
         </Grid>
