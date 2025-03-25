@@ -1,8 +1,14 @@
 @charset "utf-8";
+
 /* For AboutMe Section */
 	.bio
 {
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-wrap: break-word;
+  width: fit-content;
+  height: 400px;
   margin-top: 10px;
   margin-left: 2%;
   margin-right: 2%;
@@ -11,10 +17,21 @@
   background-color: rgba(255,255,255, 85%);
   border-radius: 53px;
   box-shadow: -5px 5px 10px rgba(0, 0, 0, 1);
-  color: #48586a
+  color: #48586a;
 }
 
+.bio h1 {
+  font-family: "Boldonse";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+}
 
+.bio h3 {
+  font-weight: 200;
+  font-style: normal;
+  font-size: 24px;
+}
 
 * {
   margin: 0;
