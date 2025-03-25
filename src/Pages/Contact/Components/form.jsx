@@ -26,7 +26,12 @@ export default function Contact() {
           <Typography component="h1" variant="h5" sx={{ color: "white" }}>
             Let's Chat!
           </Typography>
-          <p className={styles.pstyle}><a className={styles.style} href="mailto:tyler.cavanaugh24@gmail.com">Send email</a></p>
+          <h2 className={styles.pstyle}>
+            <a className={styles.style} 
+              href="mailto:tyler.cavanaugh24@gmail.com">
+              Open Email
+            </a>
+          </h2>
         </Box>
       </Container>
     </ThemeProvider>

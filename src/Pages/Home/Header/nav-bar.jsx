@@ -42,22 +42,22 @@ export default function Nav({ color }) {
           <ThemeProvider theme={theme}>
             <Link to="/" style={linkStyle}>
               <Button variant="contained" color="Grey">
-                AboutMe
+                Who Am I?
               </Button>
             </Link>
             <Link to="/Portfolio" style={linkStyle}>
               <Button variant="contained" color="Grey">
-                Portfolio
+                What Have I Programmed?
               </Button>
             </Link>
             <Link to="/Contact" style={linkStyle}>
               <Button variant="contained" color="Grey">
-                Contact
+                How To Find Me?
               </Button>
             </Link>
             <Link to='/Designs' style={linkStyle}>
               <Button variant="contained" color="Grey">
-                Designs
+                What Have I Designed?
               </Button>
             </Link>
           </ThemeProvider>

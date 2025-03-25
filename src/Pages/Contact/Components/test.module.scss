@@ -7,9 +7,9 @@
 .pstyle {
     display: flex;
     flex-direction: column;
+    width: fit-content;
     align-items: center;
     margin-top: 20px;
-    border: 1px solid white;
     border-radius: 10px;
     background-color: rgba(256, 256, 256, .8);
     width: fit-content;
@@ -17,9 +17,8 @@
 }
 
 .pstyle:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.style:hover {
-    color: white;
+    background-color: rgba(55, 152, 73, 0.8);
+    .style {
+        color: white;
+    }
 }

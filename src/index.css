@@ -107,6 +107,7 @@ footer {
   background-color: #373F51;
   display: flex;
   flex-wrap: wrap;
+  line-height: 0;
 }
 
 
