@@ -66,13 +66,12 @@ html,body,#root {
 
 /* Header Name */
 .Name {
-  padding-left: 25px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: #A9BCD0;
-    font-size: 20px;
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #A9BCD0;
+  font-size: 20px;
+}
 
   /* Hello Gif for contact page */
 .gif {
@@ -102,14 +101,6 @@ footer {
 .imageLink:hover {
   opacity: 25%;
 }
-
-.headerbackground {
-  background-color: #373F51;
-  display: flex;
-  flex-wrap: wrap;
-  line-height: 0;
-}
-
 
 /* MOBILE PORTFOLIO CARDS */
 .cardFrame

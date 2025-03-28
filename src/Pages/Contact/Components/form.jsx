@@ -23,13 +23,10 @@ export default function Contact() {
           }}
         >
           <Gif />
-          <Typography component="h1" variant="h5" sx={{ color: "white" }}>
-            Let's Chat!
-          </Typography>
           <h2 className={styles.pstyle}>
             <a className={styles.style} 
               href="mailto:tyler.cavanaugh24@gmail.com">
-              Open Email
+              Let's Chat!
             </a>
           </h2>
         </Box>

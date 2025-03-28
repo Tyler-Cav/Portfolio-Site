@@ -9,13 +9,11 @@ export default function HeaderSection() {
   return (
     <>
       <header>
-        <Paper>
-          <Grid className="headerbackground" container spacing={0}>
+          <Grid sx={{ backgroundColor: "#373F51", height:"auto", padding: "20px"}} container spacing={0}>
             <Name />
             <Nav />
             <LongMenu />
           </Grid>
-        </Paper>
       </header>
     </>
   );
