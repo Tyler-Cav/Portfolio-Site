@@ -1,14 +1,16 @@
 import { useState } from 'react';
+import { useState } from 'react';
 import Bio from "./Components/bio";
 import Skills from "./Components/skills"
 import Box from "@mui/system/Box";
 import Grid from "@mui/material/Grid";
-import Item from "@mui/material/Grid"
 import DarkModeButton from './Components/darkmode'
 import Arrow from '../../assets/ArrowWhite.png'
 import ArrowGray from '../../assets/ArrowGray.png'
 import DownwardArrowWhite from '../../assets/downwardArrowWhite.svg'
 import DownwardArrowGray from '../../assets/downwardArrowGray.svg'
+import { Height, Padding } from '@mui/icons-material';
+
 
 function AboutMeWithDarkMode() {
   const [isActive, setIsActive] = useState(false);
@@ -82,7 +84,7 @@ function AboutMeWithDarkMode() {
               </Grid>
             </Item>
           </Grid>
-          {/*TODO: I STOPPED HERE 8/29. NEED TO FIGURE OUT FORMATTING FOR THE SIDE SKILL MOBILE COMPONENT */}
+          {/* TODO: I STOPPED HERE 8/29. NEED TO FIGURE OUT FORMATTING FOR THE SIDE SKILL MOBILE COMPONENT */}
           {/* <Grid sx={{ display: 'flex', flexDirection: 'row', alignItems: 'flex start', display: { xs: 'block', md: 'none' } }} item xs={4}>
             <Item>
               <Skills classNameChange='skillsChange' />
