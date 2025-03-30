@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useState } from 'react';
 import Bio from "./Components/bio";
 import Skills from "./Components/skills"
 import Box from "@mui/system/Box";
@@ -9,6 +8,7 @@ import Arrow from '../../assets/ArrowWhite.png'
 import ArrowGray from '../../assets/ArrowGray.png'
 import DownwardArrowWhite from '../../assets/downwardArrowWhite.svg'
 import DownwardArrowGray from '../../assets/downwardArrowGray.svg'
+import Item from "@mui/material/Grid";
 import { Height, Padding } from '@mui/icons-material';
 
 
