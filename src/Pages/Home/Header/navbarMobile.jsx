@@ -6,7 +6,7 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Grid from "@mui/material/Grid";
 import { useNavigate } from "react-router-dom";
 
-const options = ["About Me", "Portfolio", "Contact", "Designs"];
+const options = ["Who Am I?", "What Have I Programmed?", "How To Find Me?", "What Have I Designed?"];
 const paths = ["/", "/Portfolio", "/Contact", "/Designs"];
 
 const ITEM_HEIGHT = 48;
@@ -51,7 +51,7 @@ export default function LongMenu() {
         PaperProps={{
           style: {
             maxHeight: ITEM_HEIGHT * 4.5,
-            width: "20ch",
+            width: "fit-content",
           },
         }}
       >
