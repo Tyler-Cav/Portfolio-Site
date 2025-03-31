@@ -1,8 +1,25 @@
 @charset "utf-8";
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+html,body,#root {
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(assets/Test-Portfolio-BackGround.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 /* For AboutMe Section */
-	.bioLightChange
-{
+	.bioLightChange {
   height: fit-content;
   margin-top: 10px;
   margin-left: 5%;
@@ -13,11 +30,11 @@
   box-shadow: -5px 5px 10px rgba(0, 0, 0, 1);
   color: #48586a
 }
+
 .bioLightChange ul li {
   text-wrap: balance;
 }
 
-/*TODO: I STOPPED HERE 8/29 */
 .skillsChange {
   display: flex;
   flex-direction: column;
@@ -54,6 +71,7 @@
   /* box-shadow: -2px 2px 10px rgba(0, 0, 0, 25); */
   color: #48586a
 }
+
 .darkModeStyle {
   margin-top: 10px;
   margin-left: 2%;
@@ -64,24 +82,6 @@
   border: none;
   /* box-shadow: -2px 2px 10px rgba(0, 0, 0, 25); */
   color: white
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto";
-}
-
-
-html,body,#root {
-  height:100%;
-  display: flex;
-  flex-direction: column;
-  background-image: url(assets/Test-Portfolio-BackGround.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 /*Portfolio Section */

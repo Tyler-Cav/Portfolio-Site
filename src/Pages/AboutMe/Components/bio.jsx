@@ -1,3 +1,14 @@
+import PropTypes from 'prop-types';
+
+Bio.propTypes = {
+  classNameChange: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  status: PropTypes.string,
+  date: PropTypes.string,
+  description: PropTypes.string,
+  descriptionTwo: PropTypes.string,
+};
+
 export default function Bio(props) {
   return (
     <section className={props.classNameChange}>
