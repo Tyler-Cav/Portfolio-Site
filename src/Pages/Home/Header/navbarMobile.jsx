@@ -6,8 +6,8 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Grid from "@mui/material/Grid";
 import { useNavigate } from "react-router-dom";
 
-const options = ["Who Am I?", "What Have I Programmed?", "Get In Touch", "What Have I Designed?"];
-const paths = ["/", "/Portfolio", "mailto:tyler.cavanaugh24@gmail.com", "/Designs"];
+const options = ["Who Am I?", "What Have I Programmed?", "What Have I Designed?", "Get In Touch",];
+const paths = ["/", "/Portfolio", "/Designs", "mailto:tyler.cavanaugh24@gmail.com"];
 
 const ITEM_HEIGHT = 48;
 
