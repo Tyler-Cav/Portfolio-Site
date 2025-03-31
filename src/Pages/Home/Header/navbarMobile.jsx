@@ -6,8 +6,8 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Grid from "@mui/material/Grid";
 import { useNavigate } from "react-router-dom";
 
-const options = ["Who Am I?", "What Have I Programmed?", "How To Find Me?", "What Have I Designed?"];
-const paths = ["/", "/Portfolio", "/Contact", "/Designs"];
+const options = ["Who Am I?", "What Have I Programmed?", "Get In Touch", "What Have I Designed?"];
+const paths = ["/", "/Portfolio", "mailto:tyler.cavanaugh24@gmail.com", "/Designs"];
 
 const ITEM_HEIGHT = 48;
 
@@ -60,13 +60,18 @@ export default function LongMenu() {
             key={option}
             selected={option === "Pyxis"}
             onClick={() => {
-              routeChange(index);
-            }}
+              if (option === "Get In Touch") {
+                window.location.href = `mailto:Tyler.Cavanaugh24@gmail.com`;
+              } else {
+                routeChange(index);
+              }
+            }
+            }
           >
             {option}
           </MenuItem>
         ))}
       </Menu>
-    </Grid>
+    </Grid >
   );
 }
