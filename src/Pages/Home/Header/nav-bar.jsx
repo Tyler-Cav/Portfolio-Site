@@ -34,7 +34,7 @@ export default function Nav({ color }) {
   const currentPage = useLocation().pathname;
 
   return (
-    <Grid sx={{ display: { xs: "none", sm: "none", lg: "block" } }} item lg={8}>
+    <Grid sx={{ display: { xs: "none", sm: "none", md: "block" } }} item lg={8} md={8}>
       <nav className="main-header-menu">
         <section
           style={{

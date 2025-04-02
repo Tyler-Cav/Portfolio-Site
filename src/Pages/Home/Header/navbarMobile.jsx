@@ -28,7 +28,7 @@ export default function LongMenu() {
   };
 
   return (
-    <Grid edge='false' sx={{ display: { xs: "block", lg: "none" }, alignSelf: "center" }} item sm={1}>
+    <Grid sx={{ display: { xs: "block", md: "none" }, alignSelf: "center" }} item sm={1}>
       <IconButton
         aria-label="more"
         id="long-button"
