@@ -28,13 +28,14 @@ export default function LongMenu() {
   };
 
   return (
-    <Grid sx={{ display: { xs: "block", lg: "none" } }} item sm={1}>
+    <Grid edge='false' sx={{ display: { xs: "block", lg: "none" }, alignSelf: "center" }} item sm={1}>
       <IconButton
         aria-label="more"
         id="long-button"
         aria-controls={open ? "long-menu" : undefined}
         aria-expanded={open ? "true" : undefined}
-        sx={{ color: "white" }}
+        edge= 'start'
+        sx={{ color: "white"}}
         aria-haspopup="true"
         onClick={handleClick}
       >

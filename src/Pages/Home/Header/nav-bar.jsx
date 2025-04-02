@@ -24,6 +24,11 @@ const theme = createTheme({
   },
 });
 
+const headerButtonStyles = {
+  height: "fit-content",
+  fontSize: "15px"
+}
+
 export default function Nav({ color }) {
   const linkStyle = { border: "1px black", padding: "5px", LineWeight: '0px' };
   const currentPage = useLocation().pathname;
@@ -41,22 +46,22 @@ export default function Nav({ color }) {
         >
           <ThemeProvider theme={theme}>
             <Link to="/" style={linkStyle}>
-              <Button sx={{ height: "fit-content", fontSize: "20px" }} variant="contained" color="Grey">
+              <Button sx={headerButtonStyles} variant="contained" color="Grey">
                 Who Am I?
               </Button>
             </Link>
             <Link to="/Portfolio" style={linkStyle}>
-              <Button sx={{ height: "fit-content", fontSize: "20px" }} variant="contained" color="Grey">
+              <Button sx={headerButtonStyles} variant="contained" color="Grey">
                 What Have I Programmed?
               </Button>
             </Link>
             <Link to='/Designs' style={linkStyle}>
-              <Button sx={{ height: "fit-content", fontSize: "20px" }} variant="contained" color="Grey">
+              <Button sx={headerButtonStyles} variant="contained" color="Grey">
                 What Have I Designed?
               </Button>
             </Link>
             <a href="mailto:tyler.cavanaugh24@gmail.com" style={linkStyle}>
-              <Button sx={{ height: "fit-content", fontSize: "20px" }} variant="contained" color="Grey">
+              <Button sx={headerButtonStyles} variant="contained" color="Grey">
                 Get In Touch
               </Button>
             </a>
