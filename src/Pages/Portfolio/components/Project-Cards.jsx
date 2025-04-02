@@ -1,34 +1,72 @@
-import avengersPic from '../../../assets/avengersAsset.png'
+import avengersPic from "../../../assets/avengersAsset.png";
 
-let projects = {
-  avengers: "https://rhemlock7.github.io/avenger-initiative/",
-  weather: "https://tyler-cav.github.io/WeatherTrackerAPI/ ",
-  passGen: "https://tyler-cav.github.io/Password-Generator/",
-  SVG: "https://github.com/Tyler-Cav/SVG-Creator",
-  ReadMe: "https://github.com/Tyler-Cav/ReadMe-Template-Creator",
-  SQL: "https://github.com/Tyler-Cav/Back-End-eCommerce",
-  reaction: "https://reaction-simulator.netlify.app/",
-  scraper: "https://github.com/Tyler-Cav/JobScraper"
-};
+let projects = [
+  {
+    avengersLink: "https://rhemlock7.github.io/avenger-initiative/",
+    avengersPicture: avengersPic,
+    alt: "Marvel Avengers Comic Book Photo including Captain America, Thor, Black Panther, and Iron Man",
+    header: "Avengers Initiative",
+    description:
+      "A personal custom workout trainer built around Marvel character physique.",
+  },
+  { weatherLink: "https://tyler-cav.github.io/WeatherTrackerAPI/ " },
+  { passGen: "https://tyler-cav.github.io/Password-Generator/" },
+  { SVG: "https://github.com/Tyler-Cav/SVG-Creator" },
+  { ReadMe: "https://github.com/Tyler-Cav/ReadMe-Template-Creator" },
+  { SQL: "https://github.com/Tyler-Cav/Back-End-eCommerce" },
+  { reaction: "https://reaction-simulator.netlify.app/" },
+  { scraper: "https://github.com/Tyler-Cav/JobScraper" },
+];
+
+function mapProjectCards() {
+  return (
+    <>
+      <a id="aTag" href={projects[0].avengersLink}>
+        <div className="cardFrame">
+          <img
+            id="portfolioImage"
+            src={projects[0].avengersPicture}
+            alt={projects[0].alt}
+          />
+          <div className="cardFrameTextBox">
+            <p id="cardMobileTextHeader">{projects[0].header}</p>
+            <p id="cardMobileDescription">{projects[0].description}</p>
+          </div>
+        </div>
+      </a>
+    </>
+  );
+}
 
 function ProjectCards() {
   return (
     <div className="projectBox">
-      <a id="aTag" href={projects.avengers}>
+      <a id="aTag" href={projects[0].avengersLink}>
         <div className="cardFrame">
-          <img id="portfolioImage" src={avengersPic} alt="Marvel Avengers Comic Book Photo including Captain America, Thor, Black Panther, and Iron Man" />
+          <img
+            id="portfolioImage"
+            src={projects[0].avengersPicture}
+            alt="Marvel Avengers Comic Book Photo including Captain America, Thor, Black Panther, and Iron Man"
+          />
           <div className="cardFrameTextBox">
             <p id="cardMobileTextHeader">Avengers Initiative</p>
-            <p id="cardMobileDescription">A personal custom workout trainer built around Marvel character physique.</p>
+            <p id="cardMobileDescription">
+              A personal custom workout trainer built around Marvel character
+              physique.
+            </p>
           </div>
         </div>
       </a>
-      <a id="aTag" href={projects.weather}>
+      {mapProjectCards()}
+      <a id="aTag" href={projects.weatherLink}>
         <div className="cardFrame">
           {/* <img id="portfolioImage" src={avengersPic} alt=""/> */}
           <div className="cardFrameTextBox">
             <p id="cardMobileTextHeader">Weather Tracker</p>
-            <p id="cardMobileDescription">A weather tracker in which you can input any city and recieve live weather information.</p>
+            <p id="cardMobileDescription">
+              A weather tracker in which you can input any city and recieve live
+              weather information.
+            </p>
           </div>
         </div>
       </a>
@@ -37,7 +75,9 @@ function ProjectCards() {
           {/* <img id="portfolioImage" src={avengersPic}*/}
           <div className="cardFrameTextBox">
             <p id="cardMobileTextHeader">Password Generator</p>
-            <p id="cardMobileDescription">A randomized password generator using custom alert prompts.</p>
+            <p id="cardMobileDescription">
+              A randomized password generator using custom alert prompts.
+            </p>
           </div>
         </div>
       </a>
@@ -46,7 +86,10 @@ function ProjectCards() {
           {/* <img id="portfolioImage" src={avengersPic}  */}
           <div className="cardFrameTextBox">
             <p id="cardMobileTextHeader">SVG Shape Creator</p>
-            <p id="cardMobileDescription">An SVG Logo Creator that uses CLI prompts with node to create SVG images.</p>
+            <p id="cardMobileDescription">
+              An SVG Logo Creator that uses CLI prompts with node to create SVG
+              images.
+            </p>
           </div>
         </div>
       </a>
@@ -55,7 +98,9 @@ function ProjectCards() {
           {/* <img id="portfolioImage" src={avengersPic}  */}
           <div className="cardFrameTextBox">
             <p id="cardMobileTextHeader">ReadMe Creator</p>
-            <p id="cardMobileDescription">ReadMe template creator that can auto compile a readme.md.</p>
+            <p id="cardMobileDescription">
+              ReadMe template creator that can auto compile a readme.md.
+            </p>
           </div>
         </div>
       </a>
@@ -64,7 +109,10 @@ function ProjectCards() {
           {/* <img id="portfolioImage" src={avengersPic} */}
           <div className="cardFrameTextBox">
             <p id="cardMobileTextHeader">SQL</p>
-            <p id="cardMobileDescription">A backend created Ecommerce application using ExpressJS, MySQL, and Sequelize.</p>
+            <p id="cardMobileDescription">
+              A backend created Ecommerce application using ExpressJS, MySQL,
+              and Sequelize.
+            </p>
           </div>
         </div>
       </a>
@@ -73,7 +121,10 @@ function ProjectCards() {
           {/* <img id="portfolioImage" src={avengersPic} */}
           <div className="cardFrameTextBox">
             <p id="cardMobileTextHeader">REACTion</p>
-            <p id="cardMobileDescription">A group created game site that tests someones reaction speed by clicking targets.</p>
+            <p id="cardMobileDescription">
+              A group created game site that tests someones reaction speed by
+              clicking targets.
+            </p>
           </div>
         </div>
       </a>
@@ -82,12 +133,13 @@ function ProjectCards() {
           {/* <img id="portfolioImage" src={avengersPic} */}
           <div className="cardFrameTextBox">
             <p id="cardMobileTextHeader">Job Scraper</p>
-            <p id="cardMobileDescription">A python job scraper using a Listrak API.</p>
+            <p id="cardMobileDescription">
+              A python job scraper using a Listrak API.
+            </p>
           </div>
         </div>
       </a>
     </div>
-
   );
 }
 
