@@ -18,25 +18,27 @@ let projects = [
   { scraper: "https://github.com/Tyler-Cav/JobScraper" },
 ];
 
-function mapProjectCards() {
-  return (
-    <>
-      <a id="aTag" href={projects[0].avengersLink}>
-        <div className="cardFrame">
-          <img
-            id="portfolioImage"
-            src={projects[0].avengersPicture}
-            alt={projects[0].alt}
-          />
-          <div className="cardFrameTextBox">
-            <p id="cardMobileTextHeader">{projects[0].header}</p>
-            <p id="cardMobileDescription">{projects[0].description}</p>
+const mapProjectCards = projects.map((project, index) => {
+  if (index === 0) {
+    return (
+      <>
+        <a id="aTag" href={project.avengersLink}>
+          <div className="cardFrame">
+            <img
+              id="portfolioImage"
+              src={project.avengersPicture}
+              alt={project.alt}
+            />
+            <div className="cardFrameTextBox">
+              <p id="cardMobileTextHeader">{project.header}</p>
+              <p id="cardMobileDescription">{project.description}</p>
+            </div>
           </div>
-        </div>
-      </a>
-    </>
-  );
-}
+        </a>
+      </>
+    );
+  }
+});
 
 function ProjectCards() {
   return (
@@ -57,7 +59,7 @@ function ProjectCards() {
           </div>
         </div>
       </a>
-      {mapProjectCards()}
+      {mapProjectCards}
       <a id="aTag" href={projects.weatherLink}>
         <div className="cardFrame">
           {/* <img id="portfolioImage" src={avengersPic} alt=""/> */}
