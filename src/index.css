@@ -126,7 +126,7 @@ footer {
   flex-direction: column;
   align-items: center;
   background: rgba(255, 255, 255, 1);
-  height: 88px;
+  height: 80px;
   padding: 10px;
   opacity: 0.38;
   border-radius: 0px 0px 22px 22px;
@@ -136,11 +136,10 @@ footer {
 
 #portfolio-image {
   padding-top: 20px;
-  position: relative;
   align-self: center;
-  height: 220px;
-  width: 220px;
-  border-radius: 5%;
+  height: 180px;
+  width: 180px;
+  margin-top: 10px;
 }
 
 #cardMobileTextHeader {
