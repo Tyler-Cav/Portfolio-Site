@@ -11,7 +11,7 @@ let projects = [
   },
   {
     link: "https://tyler-cav.github.io/WeatherTrackerAPI/ ",
-    picture: ProjectImage.weatherSVG,
+    picture: ProjectImage.WeatherSVG,
     alt: "",
     header: "Weather Tracker",
     description:
@@ -45,11 +45,11 @@ let projects = [
     alt: "",
     header: "SQL",
     description:
-      "A backend created Ecommerce application using ExpressJS, MySQL, and Sequelize.",
+      "A backend Ecommerce application using ExpressJS, MySQL, and Sequelize.",
   },
   {
     link: "https://reaction-simulator.netlify.app/",
-    picture: "",
+    picture: ProjectImage.ReactLogo,
     alt: "",
     header: "REACTion",
     description:
@@ -57,7 +57,7 @@ let projects = [
   },
   {
     link: "https://github.com/Tyler-Cav/JobScraper",
-    picture: "",
+    picture: ProjectImage.JobScraperLogo,
     alt: "",
     header: "Job Scraper",
     description: "A python job scraper using a Listrak API.",
