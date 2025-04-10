@@ -1,4 +1,4 @@
-import Avengers from "./avengersAsset.png";
+import Avengers from "./AvengersPortfolioLogo.svg";
 import MarkdownSVG from "./markdown-generator.svg";
 import PasswordSVG from "./password-generator.svg";
 import ShapeSVG from "./shape-generator.svg";
