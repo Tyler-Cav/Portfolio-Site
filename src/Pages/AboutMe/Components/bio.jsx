@@ -1,14 +1,21 @@
+import './bio.css'
+
 export default function Bio() {
   return (
     <>
-      <section className="bio">
-        <h1>Who Am I?</h1>
-        <ul style={{display: "flex", flexDirection: "column", justifyContent: "space-between", height: "300px"}}>
-          <h3>Account Manager --&gt; Fullstack Web Developer </h3>
-          <h3>Recently completed a 6-month Software Engineer Internship at <a href="https://chargeitspot.com/">ChargeItSpot</a>.</h3>
-          <h3>Continuous learning is my goal & focus.</h3>
+      <section className="bio-page-container">
+        <h1 id='bioHeader'>Who Am I?</h1>
+        <ul className="bio-list">
+          <div>
+            <p>From</p>
+            <h3><strong style={{ fontSize: "1.5em" }}>Account Manager</strong></h3>
+            <p>to</p>
+            <h3><strong style={{ fontSize: "3em" }}><span className='animate'>Fullstack Web Developer</span></strong></h3>
+          </div>
+          <div><h3 style={{ fontSize: "40px" }}>Recently completed a 6-month Software Engineer Internship at <a href="https://chargeitspot.com/">ChargeItSpot</a></h3></div>
+          <h3 style={{ fontSize: "40px" }}>A passion for Frontend, UX/UI, and Data</h3>
         </ul>
-      </section>
+      </section >
     </>
   );
 }

@@ -1,0 +1,88 @@
+.bio-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow-wrap: break-word;
+  width: 100vw;
+  height: auto;
+  padding: 30px;
+  color: rgba(175, 179, 201, 1);
+}
+
+.bio-page-container h1 {
+  font-family: "Boldonse";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.bio-page-container h3 {
+  font-weight: 200;
+  font-style: normal;
+}
+
+#bioHeader {
+  text-align: center;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-name: headerAppear;
+  animation-fill-mode: forwards;
+}
+
+.bio-list {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  justify-content: space-around;
+  background-color: rgb(350, 350, 350, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 0;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-name: slide-in;
+  animation-fill-mode: forwards;
+}
+
+.bio-list > :nth-child(1),
+.bio-list > :nth-child(2),
+.bio-list > :nth-child(3) {
+  height: 100%;
+  margin: 30px;
+  color: #373f51;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 2em;
+  overflow-wrap: break-word;
+}
+h1 {
+  animation-duration: 1s;
+}
+
+@keyframes headerAppear {
+  from {
+    translate: 200 0;
+    scale: 5% 1;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    translate: 200 0;
+    scale: 5% 1;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}

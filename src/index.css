@@ -1,37 +1,5 @@
 @charset "utf-8";
 
-/* For AboutMe Section */
-.bio {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow-wrap: break-word;
-  width: fit-content;
-  height: 400px;
-  margin-top: 10px;
-  margin-left: 2%;
-  margin-right: 2%;
-  padding-bottom: 25px;
-  padding: 30px;
-  background-color: rgba(255, 255, 255, 85%);
-  border-radius: 53px;
-  box-shadow: -5px 5px 10px rgba(0, 0, 0, 1);
-  color: #48586a;
-}
-
-.bio h1 {
-  font-family: "Boldonse";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 32px;
-}
-
-.bio h3 {
-  font-weight: 200;
-  font-style: normal;
-  font-size: 24px;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -115,10 +83,29 @@ footer {
   margin: 20px;
   text-decoration: none;
   color: black;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-name: pageAppear;
+  animation-fill-mode: both;
+  pointer-events: auto;
+}
+
+@keyframes pageAppear {
+  from {
+    translate: 200 0;
+    scale: 5% 1;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 0;
+    scale: 100% 1;
+  }
 }
 /* Hover for portfolio card frames */
 .cardFrame:hover {
-  opacity: 90%;
+  transform: scale(1.05);
+  transform: opacity(0.1);
 }
 .cardFrameTextBox {
   text-decoration: none;
@@ -154,4 +141,12 @@ footer {
   font-size: 12px;
   margin-top: 10px;
   padding-left: 5px;
+}
+
+.forAnimation {
+  opacity: 0;
+  animation-duration: 1s;
+  animation-name: pageAppear;
+  animation-fill-mode: both;
+  pointer-events: auto;
 }
