@@ -105,7 +105,6 @@ footer {
 /* Hover for portfolio card frames */
 .cardFrame:hover {
   transform: scale(1.05);
-  transform: opacity(0.1);
 }
 .cardFrameTextBox {
   text-decoration: none;
