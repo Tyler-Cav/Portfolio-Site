@@ -6,6 +6,7 @@ import SqlSVG from "./sql.svg";
 import WeatherSVG from "./weather-tracker.svg";
 import ReactLogo from "./ReactLogo.svg";
 import JobScraperLogo from "./MagnifyingGlassJobScraper.svg";
+import HangmanLogo from "./HangmanLogo.svg";
 
 export {
   MarkdownSVG,
@@ -16,4 +17,5 @@ export {
   Avengers,
   ReactLogo,
   JobScraperLogo,
+  HangmanLogo,
 };

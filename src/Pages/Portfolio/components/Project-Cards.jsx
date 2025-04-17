@@ -10,6 +10,29 @@ let projects = [
       "A personal custom workout trainer built around Marvel character physique.",
   },
   {
+    link: "https://reaction-simulator.netlify.app/",
+    picture: ProjectImage.ReactLogo,
+    alt: "",
+    header: "REACTion",
+    description:
+      "A group created game site that tests someones reaction speed by clicking targets.",
+  },
+  {
+    link: "https://github.com/Tyler-Cav/HangmanGame",
+    picture: ProjectImage.HangmanLogo,
+    alt: "",
+    header: "Command Line Hangman",
+    description:
+      "Test your guessing skills through hangman in your terminal.",
+  },
+  {
+    link: "https://github.com/Tyler-Cav/JobScraper",
+    picture: ProjectImage.JobScraperLogo,
+    alt: "",
+    header: "Job Scraper",
+    description: "A python job scraper using a Listrak API.",
+  },
+  {
     link: "https://tyler-cav.github.io/WeatherTrackerAPI/ ",
     picture: ProjectImage.WeatherSVG,
     alt: "",
@@ -46,21 +69,6 @@ let projects = [
     header: "SQL",
     description:
       "A backend Ecommerce application using ExpressJS, MySQL, and Sequelize.",
-  },
-  {
-    link: "https://reaction-simulator.netlify.app/",
-    picture: ProjectImage.ReactLogo,
-    alt: "",
-    header: "REACTion",
-    description:
-      "A group created game site that tests someones reaction speed by clicking targets.",
-  },
-  {
-    link: "https://github.com/Tyler-Cav/JobScraper",
-    picture: ProjectImage.JobScraperLogo,
-    alt: "",
-    header: "Job Scraper",
-    description: "A python job scraper using a Listrak API.",
   },
 ];
 
