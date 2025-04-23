@@ -34,7 +34,7 @@
   flex-direction: column;
   height: fit-content;
   justify-content: space-around;
-  background-color: rgb(350, 350, 350, 0.7);
+  background-color: rgba(175, 179, 201, 1);
   padding: 20px;
   border-radius: 10px;
   opacity: 0;

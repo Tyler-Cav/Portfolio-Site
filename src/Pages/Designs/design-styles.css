@@ -1,0 +1,32 @@
+.design-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 10px;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-name: pageAppear;
+  animation-fill-mode: both;
+  pointer-events: auto;
+}
+
+.design-container div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(175, 179, 201, 1);
+  height: 500px;
+  min-width: 500px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.design-container div img {
+  max-width: 90%;
+  height: auto;
+}
