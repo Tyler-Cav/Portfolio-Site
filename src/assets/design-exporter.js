@@ -1,4 +1,4 @@
-import HellDivers from "./Helldiver-Tyler.png";
+import HellDivers from "./Helldiver-Tyler.svg";
 import Glitch from "./GlitchyText.svg";
 import TestBackground from "./Test-Portfolio-BackGround.svg";
 import CuteSkull from "./CuteSkull.png";

@@ -20,14 +20,13 @@
   flex-direction: column;
   justify-content: center;
   background-color: rgba(175, 179, 201, 1);
-  margin-top: 25px;
   height: 500px;
-  width: 375px;
+  min-width: 500px;
   border: 1px solid;
   border-radius: 5px;
 }
 
 .design-container div img {
   max-width: 90%;
-  max-height: 450px;
+  height: auto;
 }
