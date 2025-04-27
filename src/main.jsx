@@ -5,7 +5,7 @@ import "./index.css";
 import HomeRoute from "./Pages/Home/HomeRoute.jsx";
 import Portfolio from "./Pages/Portfolio/PortfolioRoute.jsx";
 import Contact from "./Pages/Contact/ContactRoute.jsx";
-import About from "./Pages/AboutMe/About.jsx";
+import About from "./Pages/AboutMe/bio.jsx"
 import Designs from "./Pages/Designs/designTest.jsx"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
