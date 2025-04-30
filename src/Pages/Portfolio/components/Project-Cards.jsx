@@ -26,6 +26,14 @@ let projects = [
       "Test your guessing skills through hangman in your terminal.",
   },
   {
+    link: "https://tyler-cav.github.io/CoffeeShopCheckout/",
+    picture: ProjectImage.CoffeeCupLogo,
+    alt: "",
+    header: "Coffee Company Checkout",
+    description:
+      "A simple coffee brand checkout page using pure HTML/CSS.",
+  },
+  {
     link: "https://github.com/Tyler-Cav/JobScraper",
     picture: ProjectImage.JobScraperLogo,
     alt: "",
@@ -70,6 +78,7 @@ let projects = [
     description:
       "A backend Ecommerce application using ExpressJS, MySQL, and Sequelize.",
   },
+
 ];
 
 const mapProjectCards = projects.map((project, key) => {

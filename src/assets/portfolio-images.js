@@ -7,6 +7,7 @@ import WeatherSVG from "./weather-tracker.svg";
 import ReactLogo from "./ReactLogo.svg";
 import JobScraperLogo from "./MagnifyingGlassJobScraper.svg";
 import HangmanLogo from "./HangmanLogo.svg";
+import CoffeeCupLogo from "./CoffeeCup.svg";
 
 export {
   MarkdownSVG,
@@ -18,4 +19,5 @@ export {
   ReactLogo,
   JobScraperLogo,
   HangmanLogo,
+  CoffeeCupLogo,
 };
