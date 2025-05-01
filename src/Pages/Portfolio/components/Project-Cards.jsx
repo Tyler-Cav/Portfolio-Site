@@ -2,14 +2,6 @@ import * as ProjectImage from '../.././../assets/portfolio-images'
 
 let projects = [
   {
-    link: "https://rhemlock7.github.io/avenger-initiative/",
-    picture: ProjectImage.Avengers,
-    alt: "Marvel Avengers Comic Book Photo including Captain America, Thor, Black Panther, and Iron Man",
-    header: "Avengers Initiative",
-    description:
-      "A personal custom workout trainer built around Marvel character physique.",
-  },
-  {
     link: "https://reaction-simulator.netlify.app/",
     picture: ProjectImage.ReactLogo,
     alt: "",
@@ -39,6 +31,14 @@ let projects = [
     alt: "",
     header: "Job Scraper",
     description: "A python job scraper using a Listrak API.",
+  },
+  {
+    link: "https://rhemlock7.github.io/avenger-initiative/",
+    picture: ProjectImage.Avengers,
+    alt: "Marvel Avengers Comic Book Photo including Captain America, Thor, Black Panther, and Iron Man",
+    header: "Avengers Initiative",
+    description:
+      "A personal custom workout trainer built around Marvel character physique.",
   },
   {
     link: "https://tyler-cav.github.io/WeatherTrackerAPI/ ",
