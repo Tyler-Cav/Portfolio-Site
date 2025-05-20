@@ -8,6 +8,7 @@ import ReactLogo from "./ReactLogo.svg";
 import JobScraperLogo from "./MagnifyingGlassJobScraper.svg";
 import HangmanLogo from "./HangmanLogo.svg";
 import CoffeeCupLogo from "./CoffeeCup.svg";
+import WordleCloneLogo from "./WordleClone.svg";
 
 export {
   MarkdownSVG,
@@ -20,4 +21,5 @@ export {
   JobScraperLogo,
   HangmanLogo,
   CoffeeCupLogo,
+  WordleCloneLogo,
 };

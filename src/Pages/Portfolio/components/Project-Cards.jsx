@@ -10,6 +10,14 @@ let projects = [
       "A group created game site that tests someones reaction speed by clicking targets.",
   },
   {
+    link: "https://tyler-cav.github.io/Wordle/",
+    picture: ProjectImage.WordleCloneLogo,
+    alt: "",
+    header: "Wordle Clone",
+    description:
+      "A wordle clone that allows you to play the game in your browser.",
+  },
+  {
     link: "https://github.com/Tyler-Cav/HangmanGame",
     picture: ProjectImage.HangmanLogo,
     alt: "",
