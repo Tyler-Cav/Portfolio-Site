@@ -7,6 +7,7 @@ import Bakery from "./bakery.svg";
 import BeGood from "./Be-Good.svg";
 import HammondsHandywork from "./HammondsHandywork.svg";
 import Barber from "./Barber.svg";
+import AllGoodVideo from "./AllgoodVideo.mp4";
 
 export {
   HellDivers,
@@ -18,4 +19,5 @@ export {
   BeGood,
   HammondsHandywork,
   Barber,
+  AllGoodVideo,
 };

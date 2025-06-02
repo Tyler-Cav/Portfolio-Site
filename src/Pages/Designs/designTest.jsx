@@ -15,7 +15,7 @@ export default function testDesign() {
                 <img src={designs.HammondsHandywork} alt="" />
             </div>
             <div>
-                <img src={designs.Bakery} alt="A partial eaten donut logo that reads courtney's bakery, established in 2021" />
+                <video loop={true} autoPlay muted type="video/mp4" src={designs.AllGoodVideo} alt="" ></video>
             </div>
             <div>
                 <img src={designs.Barber} alt="" />
@@ -25,6 +25,9 @@ export default function testDesign() {
             </div>
             <div>
                 <img src={designs.Glitch} alt="" />
+            </div>
+            <div>
+                <img src={designs.Bakery} alt="A partial eaten donut logo that reads courtney's bakery, established in 2021" />
             </div>
             <div>
                 <img src={designs.GooglePixelArt} alt="" />

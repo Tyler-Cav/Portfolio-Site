@@ -30,3 +30,9 @@
   max-width: 90%;
   height: auto;
 }
+
+.design-container div video {
+  max-width: 90%;
+  height: 90%;
+  background: transparent;
+}
