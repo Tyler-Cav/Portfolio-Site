@@ -34,14 +34,14 @@ export default function Nav({ color }) {
   const currentPage = useLocation().pathname;
 
   return (
-    <Grid sx={{ display: { xs: "none", sm: "none", md: "block" } }} item lg={8} md={8}>
+    <Grid sx={{ display: { xs: "none", sm: "none", md: "block" } }} item lg={12} md={12}>
       <nav className="main-header-menu">
         <section
           style={{
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
-            justifyContent: "flex-end",
+            justifyContent: "center",
           }}
         >
           <ThemeProvider theme={theme}>
