@@ -1,20 +1,12 @@
 .container {
   display: grid;
-  align-items: center;
-  justify-content: center;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 0.1fr;
   width: 100%;
   height: fit-content;
-  overflow: hidden;
-}
-.board {
-  max-width: fit-content;
-  min-width: 0;
 }
 
-.row {
-  width: fit-content;
-  display: flex;
+.container article {
+  padding: 0px 25px 0px 24px;
 }
 
 .sides {
@@ -28,9 +20,11 @@
 }
 
 .dot {
-  width: 15px;
-  height: 15px;
-  border-radius: 100%;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-width: 48px;
+  min-width: 11px;
+  border-radius: 50%;
   animation: animate 5s timing-function delay iteration-count direction
     fill-mode;
   transition: "background-color 0.2s";
@@ -100,12 +94,5 @@
   .sides {
     justify-content: start;
     padding: 0;
-  }
-}
-
-@media (max-width: 488px) {
-  .dot {
-    width: 11px;
-    height: 11px;
   }
 }
