@@ -30,11 +30,11 @@ const EVERY_OTHER = [
 ];
 
 const WELCOME_CONFIG = [
-    ['O', 'x', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'x', 'x', 'x', 'O', 'O', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'x', 'O', 'x', 'O', 'O', 'O', 'x', 'O'],
-    ['O', 'x', 'O', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'x', 'x', 'x', 'O'],
-    ['O', 'x', 'O', 'x', 'O', 'O', 'x', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'O', 'x', 'x', 'O'],
-    ['O', 'O', 'O', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'O', 'x', 'O', 'x', 'O', 'x', 'O', 'x', 'x', 'x', 'x'],
-    ['O', 'x', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'x', 'O', 'x', 'O', 'O', 'O', 'x', 'O'],
+    ['O', 'x', 'x', 'x', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'x', 'x', 'x', 'O', 'O', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'x', 'O', 'x', 'O', 'O', 'O'],
+    ['O', 'x', 'x', 'x', 'O', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'x', 'x'],
+    ['O', 'x', 'x', 'x', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'O', 'x'],
+    ['O', 'x', 'O', 'x', 'O', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'O', 'x', 'O', 'x', 'O', 'x', 'O', 'x', 'x'],
+    ['x', 'O', 'O', 'O', 'x', 'x', 'O', 'O', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'x', 'O', 'x', 'O', 'O', 'O'],
     ['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x'],
 ];
 
@@ -153,8 +153,8 @@ export default function FlipDots() {
                 ))}
             </article>
             <div className={`${styles.sides}`}>
-                <button onClick={welcome} disabled={isDisabled} className={`${isDisabled ? styles.buttonDisabled : ''}`}>Hi?</button>
-                <button onClick={reset} disabled={isDisabled} className={`${isDisabled ? styles.buttonDisabled : ''}`}>Flip The Dots?</button>
+                <button onClick={welcome} disabled={isDisabled} className={`${isDisabled ? styles.buttonDisabled : ''}`}>HI?</button>
+                <button onClick={reset} disabled={isDisabled} className={`${isDisabled ? styles.buttonDisabled : ''}`}>FLIP THE DOTS?</button>
             </div>
             {/* 
             <article className="buttons">
