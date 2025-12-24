@@ -49,13 +49,10 @@ export default function FlipDots() {
     useEffect(() => {
         audioCtx.current = new (window.AudioContext || window.webkitAudioContext)();
 
-        // Create a master volume control
         masterGain.current = audioCtx.current.createGain();
 
-        // Set volume to 10% (0.1) to leave room for many overlapping sounds
         masterGain.current.gain.value = 0.1;
 
-        // Connect the fader to the speakers
         masterGain.current.connect(audioCtx.current.destination);
         fetch(src)
             .then(response => response.arrayBuffer())
@@ -65,20 +62,17 @@ export default function FlipDots() {
             });
     }, []);
 
-    // 2. High-performance play function
     const playClick = () => {
         if (!audioCtx.current || !audioBuffer.current) return;
 
         const source = audioCtx.current.createBufferSource();
         source.buffer = audioBuffer.current;
-
-        // Connect to the master fader instead of directly to destination
         source.connect(masterGain.current);
 
         source.start(0);
     };
 
-    const animateGridChange = (targetConfig) => {
+    const animateGridChange = (targetConfig = INITIAL_CONFIG) => {
         let counter = 0;
         const delay = 45;
 
@@ -88,7 +82,7 @@ export default function FlipDots() {
                 if (grid[rowIndex][colIndex] !== cellValue) {
                     counter++;
                     setTimeout(() => {
-                        playClick(); // Trigger sound immediately
+                        playClick();
 
                         setGrid(currentGrid => {
                             const newGrid = currentGrid.map(r => [...r]);
@@ -124,6 +118,19 @@ export default function FlipDots() {
 
     const everyOther = () => animateGridChange(EVERY_OTHER);
 
+    const changeDotOnClick = (e) => {
+        const rowIdx = Number(e.target.dataset.row);
+        const colIdx = Number(e.target.dataset.col);
+        setGrid(currentGrid => {
+            const newGrid = [...currentGrid];
+            const newRow = [...newGrid[rowIdx]];
+            newRow[colIdx] = newRow[colIdx] === 'x' ? 'O' : 'x';
+            newGrid[rowIdx] = newRow;
+            return newGrid;
+        });
+        playClick();
+    }
+
     return (
         <div className={styles.container}>
             {/* <div className={`${styles.sides}`}></div> */}
@@ -133,7 +140,10 @@ export default function FlipDots() {
                         {row.map((dot, colIndex) => (
                             <div
                                 key={`${rowIndex}-${colIndex}-${dot}`}
+                                data-row={rowIndex}            // Add this
+                                data-col={colIndex}
                                 className={`${styles.dot} ${styles.animateDot}`}
+                                onClick={changeDotOnClick}
                                 style={{
                                     backgroundColor: dot === 'O' ? 'white' : 'black',
                                 }}
