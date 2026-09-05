@@ -1,46 +1,14 @@
 import React, { useEffect, useState, useRef } from 'react';
 import styles from './flipdots.module.css';
+import * as flipDotConfig from '../../Utils/flipdots-config';
 import src from '../../../src/assets/flipdot.mp3'
 
-const INITIAL_CONFIG = [
-    ['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x'],
-    ['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x'],
-    ['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x'],
-    ['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x'],
-    ['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x'],
-    ['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x'],
-];
 
-const HI_CONFIG = [
-    ['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'O', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'x', 'x', 'x'],
-    ['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'O', 'x', 'O', 'x', 'O', 'x', 'O', 'x', 'x', 'x', 'x'],
-    ['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'O', 'O', 'O', 'x', 'x', 'x', 'O', 'x', 'x', 'x', 'x'],
-    ['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'O', 'O', 'O', 'x', 'O', 'x', 'O', 'x', 'x', 'x', 'x'],
-    ['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'O', 'x', 'O', 'x', 'O', 'x', 'x', 'x', 'x', 'x', 'x'],
-    ['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'O', 'x', 'O', 'x', 'O', 'x', 'O', 'x', 'x', 'x', 'x']
-];
 
-const EVERY_OTHER = [
-    ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'],
-    ['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x'],
-    ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'],
-    ['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x'],
-    ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'],
-    ['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x']
-];
-
-const WELCOME_CONFIG = [
-    ['O', 'x', 'x', 'x', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'x', 'x', 'x', 'O', 'O', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'x', 'O', 'x', 'O', 'O', 'O'],
-    ['O', 'x', 'x', 'x', 'O', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'x', 'x'],
-    ['O', 'x', 'x', 'x', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'O', 'x'],
-    ['O', 'x', 'O', 'x', 'O', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'x', 'x', 'O', 'x', 'O', 'x', 'O', 'x', 'O', 'x', 'O', 'x', 'x'],
-    ['x', 'O', 'O', 'O', 'x', 'x', 'O', 'O', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'O', 'O', 'x', 'O', 'x', 'O', 'x', 'O', 'O', 'O'],
-    ['x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x'],
-];
 
 
 export default function FlipDots() {
-    const [grid, setGrid] = useState(INITIAL_CONFIG);
+    const [grid, setGrid] = useState(flipDotConfig.INITIAL_CONFIG);
     const [isDisabled, setIsDisabled] = useState(false);
     const audioBuffer = useRef(null);
     const audioCtx = useRef(null);
@@ -95,10 +63,11 @@ export default function FlipDots() {
         });
     };
 
+    //Config not currently in use
     const showHi = () => animateGridChange(HI_CONFIG);
 
     const welcome = () => {
-        animateGridChange(WELCOME_CONFIG);
+        animateGridChange(flipDotConfig.WELCOME_CONFIG);
         setIsDisabled(true)
         setTimeout(() => {
             setIsDisabled(false)
@@ -116,6 +85,7 @@ export default function FlipDots() {
         }, 4000)
     };
 
+    // Currently not in use 
     const everyOther = () => animateGridChange(EVERY_OTHER);
 
     const changeDotOnClick = (e) => {

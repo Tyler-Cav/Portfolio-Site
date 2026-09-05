@@ -7,7 +7,7 @@
 
 .container article {
   margin-bottom: 5px;
-  padding: 0px 25px 0px 24px;
+  padding: 0 25px 0 24px;
 }
 
 .sides {
@@ -24,12 +24,9 @@
   width: 100%;
   aspect-ratio: 1 / 1;
   cursor: pointer;
-  max-width: 48px;
+  max-width: 100%;
   min-width: 11px;
   border-radius: 50%;
-  animation: animate 5s timing-function delay iteration-count direction
-    fill-mode;
-  transition: "background-color 0.2s";
   animation-duration: 1s;
   animation-name: flip;
   animation-fill-mode: both;
