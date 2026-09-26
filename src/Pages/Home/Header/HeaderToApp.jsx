@@ -1,4 +1,3 @@
-import Name from "./header-name";
 import Nav from "./nav-bar";
 import MobileNav from "./navbarMobile";
 import FlipDots from "../../AboutMe/flipdots";
@@ -12,7 +11,6 @@ export default function HeaderSection() {
         <Grid sx={{ backgroundColor: "#373F51", height: "auto", paddingBottom: "20px", width: "100%" }} container spacing={0}>
           <FlipDots />
           <Nav />
-          <MobileNav />
         </Grid>
       </header>
     </>

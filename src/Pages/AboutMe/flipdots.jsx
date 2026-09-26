@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import styles from './flipdots.module.css';
 import * as flipDotConfig from '../../Utils/flipdots-config';
 import src from '../../../src/assets/flipdot.mp3'
+import MobileNav from "/src/Pages/Home/Header/navbarMobile.jsx";
 
 
 
@@ -125,6 +126,7 @@ export default function FlipDots() {
             <div className={`${styles.sides}`}>
                 <button onClick={welcome} disabled={isDisabled} className={`${isDisabled ? styles.buttonDisabled : ''}`}>HI?</button>
                 <button onClick={reset} disabled={isDisabled} className={`${isDisabled ? styles.buttonDisabled : ''}`}>FLIP THE DOTS?</button>
+                <MobileNav />
             </div>
             {/* 
             <article className="buttons">
