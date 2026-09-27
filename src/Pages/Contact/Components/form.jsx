@@ -5,7 +5,6 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Gif from "./gif";
-import styles from "./test.module.scss"
 
 const defaultTheme = createTheme();
 
