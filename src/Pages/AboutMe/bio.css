@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-around;
   overflow-wrap: break-word;
-  width: 100vw;
+  width: 100%;
   height: auto;
   padding: 30px;
   color: rgba(175, 179, 201, 1);

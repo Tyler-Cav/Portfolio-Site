@@ -1,14 +1,13 @@
 import "@mui/material";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   createTheme,
   alpha,
   getContrastRatio,
   ThemeProvider,
 } from "@mui/material/styles";
-import { LineWeight } from "@mui/icons-material";
 
 const greyBase = "#A9BCD0";
 const greyMain = alpha(greyBase, 0.7);
@@ -29,19 +28,18 @@ const headerButtonStyles = {
   fontSize: "15px"
 }
 
-export default function Nav({ color }) {
+export default function Nav() {
   const linkStyle = { border: "1px black", padding: "5px", LineWeight: '0px' };
-  const currentPage = useLocation().pathname;
 
   return (
-    <Grid sx={{ display: { xs: "none", sm: "none", md: "block" } }} item lg={8} md={8}>
+    <Grid sx={{ display: { xs: "none", sm: "none", md: "block" } }} item lg={12} md={12}>
       <nav className="main-header-menu">
         <section
           style={{
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
-            justifyContent: "flex-end",
+            justifyContent: "center",
           }}
         >
           <ThemeProvider theme={theme}>

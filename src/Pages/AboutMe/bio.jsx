@@ -1,4 +1,5 @@
 import './bio.css'
+import './flipdots'
 
 export default function Bio() {
   return (
@@ -15,5 +16,6 @@ export default function Bio() {
         <h3 style={{ fontSize: "40px" }}>A passion for Frontend, Design, and Data</h3>
       </ul>
     </section >
+
   );
 }
