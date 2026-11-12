@@ -4,10 +4,6 @@ import * as flipDotConfig from '../../Utils/flipdots-config';
 import src from '../../../src/assets/flipdot.mp3'
 import MobileNav from "/src/Pages/Home/Header/navbarMobile.jsx";
 
-
-
-
-
 export default function FlipDots() {
     const [grid, setGrid] = useState(flipDotConfig.INITIAL_CONFIG);
     const [isDisabled, setIsDisabled] = useState(false);
@@ -41,10 +37,9 @@ export default function FlipDots() {
         source.start(0);
     };
 
-    const animateGridChange = (targetConfig = INITIAL_CONFIG) => {
+    const animateGridChange = (targetConfig = flipDotConfig.INITIAL_CONFIG) => {
         let counter = 0;
-        const delay = 45;
-
+        const delay = 45
         targetConfig.forEach((row, rowIndex) => {
             row.forEach((cellValue, colIndex) => {
                 // Only trigger if the dot is actually flipping
@@ -89,9 +84,10 @@ export default function FlipDots() {
     // Currently not in use 
     const everyOther = () => animateGridChange(EVERY_OTHER);
 
-    const changeDotOnClick = (e) => {
-        const rowIdx = Number(e.target.dataset.row);
-        const colIdx = Number(e.target.dataset.col);
+    const changeDotOnClick = (rowIdx, colIdx) => {
+        // const rowIdx = Number(e.target.dataset.row);
+        // const colIdx = Number(e.target.dataset.col);
+        // console.log(e);
         setGrid(currentGrid => {
             const newGrid = [...currentGrid];
             const newRow = [...newGrid[rowIdx]];
@@ -111,10 +107,8 @@ export default function FlipDots() {
                         {row.map((dot, colIndex) => (
                             <div
                                 key={`${rowIndex}-${colIndex}-${dot}`}
-                                data-row={rowIndex}            // Add this
-                                data-col={colIndex}
                                 className={`${styles.dot} ${styles.animateDot}`}
-                                onClick={changeDotOnClick}
+                                onClick={() => changeDotOnClick(rowIndex,colIndex)}
                                 style={{
                                     backgroundColor: dot === 'O' ? 'white' : 'black',
                                 }}
