@@ -6,14 +6,12 @@ This is a personal portfolio that was built using React.
 
 ## Table of Contents
 
-[Installation](#installation) ||
 [Usage](#usage) ||
 [Questions](#questions)
 
 ## Usage
 
-Heroku Access:
-[Portfolio Page](https://tyler-cavanaugh-portfolio-b08e09111ce1.herokuapp.com/)
+[Portfolio](https://tylercav.dev/)
 
 ## Questions
 
