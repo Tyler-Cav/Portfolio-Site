@@ -1,10 +1,30 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig, loadEnv, transformWithOxc } from "vite";
+import react from "@vitejs/plugin-react";
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()], 
-  server: {
-    port: process.env.PORT || 5173
-  }
-})
+const transformJsxInJs = () => ({
+  name: "transform-jsx-in-js",
+  enforce: "pre",
+  async transform(code, id) {
+    const normalizedId = id.replace(/\\/g, "/");
+
+    if (!/\/src\/.*\.js$/.test(normalizedId)) {
+      return null;
+    }
+
+    return transformWithOxc(code, id, {
+      lang: "jsx",
+    });
+  },
+});
+
+export default defineConfig(({ mode }) => {
+  const env = loadEnv(mode, process.cwd(), "");
+  const serverPort = Number(env.PORT) || 5173;
+
+  return {
+    plugins: [transformJsxInJs(), react()],
+    server: {
+      port: serverPort,
+    },
+  };
+});
