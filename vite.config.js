@@ -26,5 +26,8 @@ export default defineConfig(({ mode }) => {
     server: {
       port: serverPort,
     },
+    preview: {
+      allowedHosts: [env.APP_HOST || ".herokuapp.com", "tylercav.dev"],
+    },
   };
 });

@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import styles from './flipdots.module.css';
 import * as flipDotConfig from '../../Utils/flipdots-config';
 import src from '../../../src/assets/flipdot.mp3'
-import MobileNav from "/src/Pages/Home/Header/navbarMobile.jsx";
+import MobileNav from "../Home/Header/navbarMobile";
 
 export default function FlipDots() {
     const [grid, setGrid] = useState(flipDotConfig.INITIAL_CONFIG);

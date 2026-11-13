@@ -2,18 +2,21 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import HomeRoute from "./Pages/Home/HomeRoute.jsx";
 import Portfolio from "./Pages/Portfolio/PortfolioRoute.jsx";
 import Contact from "./Pages/Contact/ContactRoute.jsx";
 import About from "./Pages/AboutMe/bio.jsx"
 import Designs from "./Pages/Designs/designTest.jsx"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+function RouteErrorFallback() {
+  return <div>Something went wrong while loading this page.</div>;
+}
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <Error />,
+    errorElement: <RouteErrorFallback />,
     children: [
       {
         index: true,

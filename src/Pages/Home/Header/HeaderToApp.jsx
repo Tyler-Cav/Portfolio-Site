@@ -1,5 +1,4 @@
 import Nav from "./nav-bar";
-import MobileNav from "./navbarMobile";
 import FlipDots from "../../AboutMe/flipdots";
 
 import Grid from "@mui/material/Grid";

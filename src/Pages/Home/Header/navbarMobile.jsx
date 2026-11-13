@@ -2,7 +2,7 @@ import * as React from "react";
 import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
+import { MoreVert } from "@mui/icons-material";
 import Grid from "@mui/material/Grid";
 import { useNavigate } from "react-router-dom";
 
@@ -11,7 +11,7 @@ const paths = ["/", "/Portfolio", "/Designs", "mailto:tyler.cavanaugh24@gmail.co
 
 const ITEM_HEIGHT = 48;
 
-export default function LongMenu() {
+export default function MobileNav() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -39,7 +39,7 @@ export default function LongMenu() {
         aria-haspopup="true"
         onClick={handleClick}
       >
-        <MoreVertIcon />
+       <MoreVert/>
       </IconButton>
       <Menu
         id="long-menu"
