@@ -1,13 +1,12 @@
 import "@mui/material";
 import Button from "@mui/material/Button";
-import Grid from "@mui/material/Grid";
-import { Link } from "react-router-dom";
 import {
   createTheme,
   alpha,
   getContrastRatio,
   ThemeProvider,
 } from "@mui/material/styles";
+import scrollToSection from "../../../Utils/scrollToSection";
 
 const greyBase = "#A9BCD0";
 const greyMain = alpha(greyBase, 0.7);
@@ -28,44 +27,41 @@ const headerButtonStyles = {
   fontSize: "15px"
 }
 
+const sections = [
+  { id: "about", label: "Who Am I?" },
+  { id: "programmed", label: "What Have I Programmed?" },
+  { id: "designs", label: "What Have I Designed?" },
+];
+
 export default function Nav() {
   const linkStyle = { border: "1px black", padding: "5px", LineWeight: '0px' };
 
   return (
-    <Grid sx={{ display: { xs: "none", sm: "none", md: "block" } }} item lg={12} md={12}>
-      <nav className="main-header-menu">
-        <section
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <ThemeProvider theme={theme}>
-            <Link to="/" style={linkStyle}>
-              <Button sx={headerButtonStyles} variant="contained" color="Grey">
-                Who Am I?
-              </Button>
-            </Link>
-            <Link to="/Portfolio" style={linkStyle}>
-              <Button sx={headerButtonStyles} variant="contained" color="Grey">
-                What Have I Programmed?
-              </Button>
-            </Link>
-            <Link to='/Designs' style={linkStyle}>
-              <Button sx={headerButtonStyles} variant="contained" color="Grey">
-                What Have I Designed?
-              </Button>
-            </Link>
-            <a href="mailto:tyler.cavanaugh24@gmail.com" style={linkStyle}>
-              <Button sx={headerButtonStyles} variant="contained" color="Grey">
-                Get In Touch
+    <nav className="main-header-menu">
+      <section className="nav-buttons">
+        <ThemeProvider theme={theme}>
+          {sections.map(({ id, label }) => (
+            <a
+              key={id}
+              href={`#${id}`}
+              style={linkStyle}
+              onClick={(event) => {
+                event.preventDefault();
+                scrollToSection(id);
+              }}
+            >
+              <Button sx={headerButtonStyles} variant="contained" color="Grey" tabIndex={-1}>
+                {label}
               </Button>
             </a>
-          </ThemeProvider>
-        </section>
-      </nav>
-    </Grid>
+          ))}
+          <a href="mailto:tyler.cavanaugh24@gmail.com" style={linkStyle}>
+            <Button sx={headerButtonStyles} variant="contained" color="Grey" tabIndex={-1}>
+              Get In Touch
+            </Button>
+          </a>
+        </ThemeProvider>
+      </section>
+    </nav>
   );
 }

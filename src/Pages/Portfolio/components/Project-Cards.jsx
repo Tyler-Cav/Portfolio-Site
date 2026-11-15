@@ -89,9 +89,9 @@ let projects = [
 
 ];
 
-const mapProjectCards = projects.map((project, key) => {
+const mapProjectCards = projects.map((project) => {
   return (
-    <a className='cardFrame' href={project.link} key={project.key}>
+    <a className='cardFrame' href={project.link} key={project.header}>
       <img id="portfolio-image" src={project.picture} alt={project.alt} />
       <div className="cardFrameTextBox">
         <h2 id="cardMobileTextHeader">{project.header}</h2>
@@ -105,7 +105,7 @@ function ProjectCards() {
 
   return (
     <>
-      <div className="projectBox">{mapProjectCards}</div>;
+      <div className="projectBox">{mapProjectCards}</div>
     </>
   )
 }

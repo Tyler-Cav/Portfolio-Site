@@ -10,7 +10,7 @@
 html,
 body,
 #root {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: black;
@@ -150,4 +150,64 @@ footer {
   animation-name: pageAppear;
   animation-fill-mode: both;
   pointer-events: auto;
+}
+
+/* Single-page layout */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1100;
+  background-color: #373f51;
+  padding: 5px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.page-section {
+  /* Keeps section tops clear of the pinned nav when scrolled to */
+  scroll-margin-top: 70px;
+}
+
+/* Hold each section's entrance animations until it scrolls into view */
+.page-section:not(.is-visible),
+.page-section:not(.is-visible) * {
+  animation-play-state: paused;
+}
+
+.section-header {
+  font-family: "Boldonse";
+  font-weight: 400;
+  font-size: 50px;
+  text-align: center;
+  overflow-wrap: break-word;
+  color: rgba(175, 179, 201, 1);
+  padding: 30px 30px 0;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-name: headerAppear;
+  animation-fill-mode: forwards;
+}
+
+/* Nav buttons: a row on wide screens, a column on narrow screens.
+   The four buttons need ~751px in a row, so stack them below 800px. */
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 799px) {
+  .nav-buttons {
+    flex-direction: column;
+  }
+
+  /* The stacked nav is too tall to pin, so it scrolls away with the header */
+  .site-nav {
+    position: static;
+    box-shadow: none;
+  }
+
+  .page-section {
+    scroll-margin-top: 0;
+  }
 }
