@@ -11,9 +11,6 @@ html,
 body,
 #root {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: black;
   background-image: url(assets/Test-Portfolio-BackGround.svg);
   background-size: cover;
   background-repeat: no-repeat;
