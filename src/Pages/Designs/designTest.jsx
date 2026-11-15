@@ -1,5 +1,3 @@
-import Grid from "@mui/material/Grid";
-import Item from "@mui/material/Grid"
 import * as designs from '../../assets/design-exporter.js'
 import "./design-styles.css"
 
