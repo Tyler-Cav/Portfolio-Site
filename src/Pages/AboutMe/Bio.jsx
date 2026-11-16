@@ -1,5 +1,5 @@
 import './bio.css'
-import './flipdots'
+import './FlipDots.jsx'
 
 export default function Bio() {
   return (

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import styles from './flipdots.module.css';
 import * as flipDotConfig from '../../Utils/flipdots-config';
 import src from '../../../src/assets/flipdot.mp3'

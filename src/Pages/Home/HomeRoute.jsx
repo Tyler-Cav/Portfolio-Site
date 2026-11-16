@@ -1,7 +1,7 @@
 import RevealSection from "./RevealSection";
-import Bio from "../AboutMe/bio";
+import Bio from "../AboutMe/Bio.jsx";
 import Portfolio from "../Portfolio/PortfolioRoute";
-import Designs from "../Designs/designTest";
+import Designs from "../Designs/Design.jsx";
 
 export default function HomeRoute() {
   return (

@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import './assets/Test-Portfolio-BackGround.svg'
 import Footer from "./Pages/Home/Footer/Footer";
 import HeaderSection from "./Pages/Home/Header/HeaderToApp";
-import Nav from "./Pages/Home/Header/nav-bar";
+import Nav from "./Pages/Home/Header/NavBar.jsx";
 
 export default function App() {
   return (

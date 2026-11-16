@@ -1,4 +1,4 @@
-import FlipDots from "../../AboutMe/flipdots";
+import FlipDots from "../../AboutMe/FlipDots.jsx";
 
 import Grid from "@mui/material/Grid";
 
